@@ -126,11 +126,15 @@ function avancarSlide(){
 }
 
 setInterval(function() {
-    $('#slides').animate({left:'-80%'},5000);
-    $('#slides').animate({left:'-160%'},5000);
-    $('#slides').animate({left:0},1000);
+    $('#slides').animate({left:'-85%'},10000);
+    $('#slides').animate({left:'-85%'},5000);
+    $('#slides').animate({left:'-140%'},10000);
+    ('#slides').animate({left:'-140%'},5000);
+    $('#slides').animate({left:'-85%'},10000);
+    ('#slides').animate({left:'-85%'},5000);
+    $('#slides').animate({left:0},10000);
   
-  }, 3000);
+  }, 5000);
 
 function abrirTela(pasta,arquivo){
     let str = '../'+pasta+'/'+arquivo;

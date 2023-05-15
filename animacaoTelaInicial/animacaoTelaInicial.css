@@ -1,89 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-@keyframes TextoA{
-    0%{left : 650px ; top :40%; opacity: 0%;}
-    15%{left : 650px ; top :40%;opacity: 100%;position:relative;}
-    45%{left : 650px ; top :40%;opacity: 100%; color : black;position:absolute;}
-    60%{left : 20px ; top :40%; opacity: 100%; position:absolute; color: black;}
-    85%{left : 20px ; top :0%; opacity: 100%; position:absolute; color: white;}
-    100%{left : 20px ; top :0%; opacity: 100%; position:absolute; color: white; ;}
-}
-@keyframes quad1A{
-    0%{left : 1075px ; top :50%; opacity: 0%; width: 0%; height: 0%;}
-    15%{left : 1075px ; top :50%;opacity: 100%;width: 100px; height: 10%;}
-    30%{left : 0px ; top :50%;opacity: 100%;width: 100px; height: 10%;}
-    45%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:10%;}
-    60%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:10%;}
-    85%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:10%;}
-    100%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:10%;}
-}
-@keyframes quad2A{
-    0%{left : 1200px ; top :30%; opacity: 0%; width: 0%; height: 0%;}
-    15%{left : 1200px ; top :30%;opacity: 100%;width: 100px; height: 100px;}
-    30%{left : 0px ; top :30%;opacity: 100%;width: 100px; height: 100px; position: relative;}
-    45%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:100px;}
-    60%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:100px;}
-    85%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:100%;}
-    100%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:100%;}
-}
+
 body {
     margin: 0px;
     padding :0px;
+  
     overflow: hidden;
-
+ 
 }
-.Principal{
+.principal{
     position: absolute;
+    display: flex;
     width: 100%;
     height: 100%;
-    
-    
-    flex-wrap: wrap;
-   
-    justify-content:  space-around;
-    justify-items: center;
+    justify-content:  center;
     align-items: center;
-    align-content: center;
-    
+    background-color: #161A1D;
+    z-index: -2;
 }
-.texto {
-    color: black;
-    font-size: 50px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    position: relative;
-    display: flex;
-    left :650px;
-    top: 40%;
-    animation-name: TextoA;
-    animation-duration: 5s;    
+.v{
+    position: absolute;
+    left: 10%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    top: 36%;
 }
-.quad1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    
-
-    left : 1075px; 
-    top :50%; 
-    width: 100px;
-    height: 100px;
-    border-bottom: 5px solid #A4161A;
-    background-color: black;
-    animation-name: quad1A;
-    animation-duration: 5s; 
+.c{
+    position: absolute;
+    left: 90%;
+    z-index: 2;
+    top: 36%;
 }
 
-.quad2 {
-    position: relative;
-    display: flex;
-    
-    
-    left : 1200px; 
-    top :30%; 
-    width: 100px;
-    height: 100px;
-    background-color: #0d0a00;
-    animation-name: quad2A;
-    animation-duration: 5s; 
+.macaco{
+    position: absolute;
+    top: 10%;
+    z-index: 1;
 }
+.oculos{
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+}
+.quad2{
+    width: 12%;
+    height: 24%;
+    background-color: white;
+    position: absolute;
+    left: -14%;
+
+}
+.quad2,.quad{
+    background-color: #E5383B;
+    
+    height: 3%;
+    left: 43%;
+    z-index: 0;
+    top:42%;
+    opacity: 0;
+    position: absolute;
+    
+}
+
+.quad2{
+    z-index: -1;
+    background-color: white;
+    border-bottom: 5px solid white;
+    
+}
+
+
+

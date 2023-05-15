@@ -8,8 +8,10 @@
     <title>Virtual Cine</title>
 </head>
 <body onload="VerificaBotoes()">
+    
     <div class="menuPerfil" id="menuPerfil" >
-        <div class="perfilSel">Configurações</div>
+        <div class="textoConfig">CONFIGURAÇÕES</div>
+        
         <div class="perfilSel">Histórico</div>
         <div class="perfilSel">Conta</div>
         <div class="perfilSel">Fale Conosco</div>
@@ -20,7 +22,7 @@
     <div class="cabecalho" id="cabe">
         
         <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
-            <div class="txtLogo">VIRTUAL CINE</div>
+            <img src="../img/Logo.png" alt="" height="50%">
         </div>
         
         <div class="cabecalhoMeio">
@@ -37,13 +39,13 @@
 
         
         <div class="cabecalhoBorda2" >
-            <div class="cabecalhoBusca">
+            <!-- <div class="cabecalhoBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..."/>
                 
-            </div>
-            <div class="cabecalhoLupa">
+            </div> -->
+            <!-- <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
-            </div>
+            </div> -->
             <a href="#" onclick="MostrarPerfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
         </div>
         <div class="containerAbaPrincipal">
@@ -51,27 +53,27 @@
                 <!-- Categorias -->
                 <div class="categorias" id="categorias">
                     
-                    <div class="contentAbas">Aventura </div>
-                    <div class="contentAbas">Terror</div>
-                    <div class="contentAbas">Ação</div>
-                    <div class="contentAbas">Romance</div>
-                    <div class="contentAbas">Comédia</div>               
+                    <div class="contentAbas"><h3>Aventura</h3>  </div>
+                    <div class="contentAbas"><h3>Terror  </h3>  </div>
+                    <div class="contentAbas"><h3>Ação    </h3>  </div>
+                    <div class="contentAbas"><h3>Romance </h3>  </div>
+                    <div class="contentAbas"><h3>Comédia </h3>  </div>               
                 </div>
                 <!-- Destaques -->
                 <div class="destaques"id="destaques">
-                    <div class="contentAbas">Gato de Botas 2</div>
-                    <div class="contentAbas">Mad Max</div>
-                    <div class="contentAbas">Enrolados</div>
-                    <div class="contentAbas">Titanic </div>
-                    <div class="contentAbas">Harry Potter</div> 
+                    <div class="contentAbas"><h3>Gato de Botas 2</h3></div>
+                    <div class="contentAbas"><h3>Mad Max        </h3></div>
+                    <div class="contentAbas"><h3>Enrolados      </h3></div>
+                    <div class="contentAbas"><h3>Titanic        </h3></div>
+                    <div class="contentAbas"><h3>Harry Potter   </h3></div> 
                 </div>
                 <!-- Combos -->
                 <div class="combos"id="combos">
-                    <div class="contentAbas">Burguer e CocaCola</div>
-                    <div class="contentAbas">Pastel e caldo de cana</div>
-                    <div class="contentAbas">Tacos e churros</div>
-                    <div class="contentAbas">Hot Dog e suco</div>
-                    <div class="contentAbas">Pizza e Vinho </div> 
+                    <div class="contentAbas"><h3>Burguer e CocaCola    </h3> </div>
+                    <div class="contentAbas"><h3>Pastel e caldo de cana</h3> </div>
+                    <div class="contentAbas"><h3>Tacos e churros       </h3> </div>
+                    <div class="contentAbas"><h3>Hot Dog e suco        </h3> </div>
+                    <div class="contentAbas"><h3>Pizza e Vinho         </h3> </div> 
                 </div>
             </div>
            
@@ -97,16 +99,62 @@
                
                 
                     <div class="slidesImgs" id="slides">
-                        <img src="../img/Virtual Cine.png" height="105%">
-                        <img src="../img/Virtual Cine 2.png" height="105%">
-                        <img src="../img/Virtual Cine 3.png" height="105%">
+                        
+                        <div class="slidesImgs">
+                            <img src="../img/SlideImagem1.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem2.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem3.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem4.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem5.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem6.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem7.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem8.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+                        <div class="slidesImgs">
+                            <img src="../img/SlidesImagem9.png" height="105%">
+                            <div class="slidesImgsT"></div>
+                        </div>
+                    
+                    
+                       
+                        
+                        
+                        
+                        
                     </div>
                 
-                <div class="slidesCont" id="slidesCont">
+                <!-- <div class="slidesCont" id="slidesCont">
                     <div class="slidesNum"></div>
                     <div class="slidesNum"></div>
                     <div class="slidesNum"></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

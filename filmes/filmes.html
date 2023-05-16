@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Cine</title>
     <link rel="stylesheet" href="filmes.css">
+    <link rel="stylesheet" href="../loading/loading.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
  
     
 </head>
 <body onload="setaPos()">
+    <div id="preloader">
+
+        <div class="inner">
+           <img src="../img/Logo.png" alt="" >
+           <div class="bolas">
+            
+              <div></div>
+              <div></div>
+              <div></div>                    
+           </div>
+        </div>
+    </div>
     <div class="principal">
         <div class="cabecalho">
             
             <div class="caixaL"> 
-                <div class="logoTexto" onclick="voltar();">VIRTUAL CINE</div>
+                <div class="logoTexto" onclick="voltar();">
+                    <img src="../img/Logo.png" alt="" height="50%">
+                </div>
             </div>
         </div>
 
@@ -287,5 +302,6 @@
 </body>
 <script src="../jquery-3.6.4.min.js"></script>
 <script src="filmes.js"></script>
+<script src="../loading/loading.js"></script>
 
 </html>

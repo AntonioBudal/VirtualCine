@@ -21,7 +21,7 @@ function telafilme(i){
 }
 
 function setaPos(){
-     var w = window.innerWidth *0.9;
+     var w = window.innerWidth *0.825;
      document.getElementById("seta2").style.left = w+'px';
      document.getElementById("seta4").style.left = w+'px';
 }

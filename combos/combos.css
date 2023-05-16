@@ -43,6 +43,8 @@ body{
     font-size: 50px;
     display: flex;
     align-items: center;
+    justify-content: left;
+    margin-right: 50%;
 }
 .cabecalhoBorda2{
     width: 25%;
@@ -51,27 +53,31 @@ body{
 
     display: flex;
     align-items: center;
+    
 }
 
 .cabecalhoMeio{
     width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space;
     align-items: center;
 }
 
-.txtLogo{
-    
-    font-family: 'Quicksand', sans-serif;
-    
+.logoTexto{
+    width: 100%;
+    height: 100%;
     color: white;
-    text-align: center;
-    cursor: pointer;
-    transition: 1s;
+    font-size:40px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition : 1s;
 }
 
-.txtLogo:hover{
+.logoTexto:hover, .logoTexto img{
     transform: scale(1.1);
+    transition : 1s;
     cursor: pointer;
 }
 

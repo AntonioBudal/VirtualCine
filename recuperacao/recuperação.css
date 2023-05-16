@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #323232;
+  border: none;
+}
+
+body {
+  background-image: url('../img/cinema.jpg');
+  
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+
+a:hover {
+  color: rgb(150, 0, 0);
+}
+
+.caixa-principal {
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+   padding: 20px 30px;
+  margin-top: 10vh; 
+  border-radius: 8px;
+  text-align: center;
+  border: solid 2px rgb(9, 41, 56);
+}
+
+form { 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label, 
+input {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: black;
+}
+
+label {  
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {  
+  border: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+input:focus { 
+  border: 2px solid rgb(150, 0, 0);
+}
+
+.esquece_a_senha {
+  display: block;
+  text-align: right;
+}
+
+.submit{
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #FFF;
+  background-color:  rgb(186, 0 , 1);
+  font-weight: bold;
+  font-size: 15px;
+  border: solid 1px rgb(88, 0, 0);;
+}
+
+.submit:hover{
+  background-color: rgb(88, 1 , 0);
+  transition: .5s;
+}
+
+.social-container {
+  margin-bottom: 10px;
+}
+
+.social-container p {
+  margin-bottom: 10px;
+}
+
+.social-container i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 0 5px;
+  color: #FFF;
+  background-color: #000000;
+}
+.card-content label { /* texto 3 */
+  color: black;
+  font-size: 15px;
+  opacity: 0.8;
+  display: flex;
+}
+
+/* Container do voltar */
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  font-weight: bold;
+  color: #7c0000;
+}
+
+input[type="radio"] {
+    /* Esconde o checkbox(quadradinho) padrão */
+    display: none;
+  }
+  
+  
+  .bolinha label, .bolinha2 label{
+    width: 100px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    justify-content: space-between;
+  }
+  .Email{
+    position: absolute;
+    left: 630px;
+    top: 210px;
+  }
+  
+  .MensagemSMS{
+    position: absolute;
+    left: 630px;
+    top: 250px;
+  }
+  
+  input[type="radio"]:checked + label {
+    /* Estilo da bolinha quando selecionada */
+    background-color:  rgb(186, 0 , 1);;
+  }
+
+  input[type="radio"]:checked + label {
+    /* Estilo da bolinha quando selecionada */
+    background-color:  rgb(186, 0 , 1);;
+  }
+
+ 
+  .card
+  {
+    font-weight: bold;
+  }
+  .telefone{
+    display: none;
+    width: 70%;
+    justify-content: left;
+  }
+  .Emailcaixa{
+    display: none;
+  }
+  
+    .container{
+      display: flex;
+      width: 90%;
+      height: 10%;
+      justify-content: space-around;
+    }
+    .caixa_telefone{
+      margin-left: 30%;
+    }
+    .bandeiraemenor
+    {
+      width: 100px;
+      height: 44px;
+      margin-left: -43px;
+      margin-top: -54px;
+      flex-direction: row;
+      display: flex;
+    }
+    .caixadabandeira
+  {
+    width: 48%;
+    height: 44px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    }
+    .sinalmenor
+    {
+      width: 50%;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    .bandeiraemenor:hover{
+      border: solid 2px  #323232;
+    }
+    .img_sinalmenor{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+    .img_brasil{
+      width: 25px;
+      height: 25px;
+    }

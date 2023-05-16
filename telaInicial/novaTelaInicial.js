@@ -91,7 +91,7 @@ function Mostrarq1(id1,id2,id3,id4){
     $('#'+id2).css("display", "none");
     $('#'+id3).css("display", "none");
     $('#'+id4).css("display", "none");
-    $('#'+id1).animate({width:'100%'},1000);
+    $('#'+id1).animate({width:'60%'},1000);
 }
 
 function Mostrarq2(id1,id2,id3,id4){

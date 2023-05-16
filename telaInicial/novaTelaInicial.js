@@ -117,15 +117,15 @@ function Mostrarq4(id1,id2,id3,id4){
 
 
 setInterval(function() {
-    $('#slides').animate({left:'-85%'},10000);
     $('#slides').animate({left:'-85%'},5000);
-    $('#slides').animate({left:'-140%'},10000);
-    ('#slides').animate({left:'-140%'},5000);
-    $('#slides').animate({left:'-85%'},10000);
+    $('#slides').animate({left:'-85%'},1000);
+    $('#slides').animate({left:'-140%'},5000);
+    ('#slides').animate({left:'-140%'},1000);
+    $('#slides').animate({left:'-85%'},1000);
     ('#slides').animate({left:'-85%'},5000);
-    $('#slides').animate({left:0},10000);
+    $('#slides').animate({left:0},5000);
   
-  }, 5000);
+  }, 1000);
 
 function abrirTela(pasta,arquivo){
     let str = '../'+pasta+'/'+arquivo;

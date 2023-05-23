@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login.php</title>
-</head>
-<body>
-    <?php 
-       
+<?php 
+        include("../cadastro/conecta.php");
+        $email = $_GET["email"];
+        $senha=  $_GET["senha"];
 
-        $email = $_POST["email"];
-        $password= $_POST["password"];
-        echo("Email = " . $email);
-        echo("<br>");
-        echo("Senha = " . $password);
-    ?>
-</body>
-</html>
+        $comando = $pdo->prepare("SELECT * FROM cadastro WHERE email =$email AND senha = '$senha");
+              if ($comando -> rowcount > 0){
+                echo('Logado');
+                header("location:../telaInicial/novaTelaInicial.html");
+              } else{
+                echo('logado');
+                
+           
+              }
+          
+?>

@@ -1,6 +1,6 @@
- // função pra ler querystring
+   // função pra ler querystring
         
- function queryString(parameter) {  
+   function queryString(parameter) {  
     var loc = location.search.substring(1, location.search.length);   
     var param_value = false;   
     var params = loc.split("&");   
@@ -17,7 +17,7 @@
         return undefined;   
     }   
 }
-var variavel = queryString("usuario");
+var variavel = queryString("email");
 
 function VerificaBotoes() {
   if(variavel == undefined){
@@ -30,9 +30,8 @@ function VerificaBotoes() {
       document.getElementById('cadastro').style.display = 'none';
       document.getElementById('assinar').style.display = 'inline-block';
   }
-
-  
 }
+
 function telafilme(i){
 
     if (variavel == undefined) {

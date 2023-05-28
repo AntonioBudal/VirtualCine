@@ -7,10 +7,10 @@ body {
     padding: 0;
     margin:  0;
     width: 100%;
-    height: 200vh;
+    height: 250vh;
     display: flex;
     flex-direction: column;
- 
+    overflow-x: hidden;
     
 }
 
@@ -82,26 +82,6 @@ h2{
     animation: animate 1.5s linear infinite;
     z-index: -1;
 }
-.piscar{
-    font-size: larger;
-    font-family: 'Quicksand', serif;
-    color:#070000;
-    animation: animate 1.5s linear infinite;
-    }
-   
-    @keyframes animate {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.7;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-        /* Cabeçalho */
-
 
 .cabecalho{
     width: 100%;
@@ -113,7 +93,7 @@ h2{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
     animation: Gradient 8s ease infinite;
 }
 
@@ -175,7 +155,7 @@ a{
 /* Os botoes do cabeçalho */
 .cabecalhoBotoes{
     display: flex;
-    width: 25%;
+    width: 35%;
 
    
     font-size:20px;
@@ -258,27 +238,110 @@ a{
 
 .content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    background-color: #0B090A;
     flex-direction: row;
-    width: 100%;
-    height: 35%;
+    height: 50%;
+    width: 500%;
     margin-top: 5%;
+
 }
-.contentMetade,.contentMetade2{
- 
-    width: 50%;
-    height: 100%;
-    /* border: 2px solid #660708; */
+
+
+.containerSlides{
+    width: 500%;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 0;
-    
-    
+    align-items: center;
+    justify-content: center;
     position: relative;
-   
     
+}
+
+.slidesGrad{
+   overflow: hidden;
+    position: absolute;
+   
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.95));
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    width: 20%;
+    height: 100%;
+}
+
+.slides{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+  
+
+    
+}
+
+.planosQuad{
+    height: 7%;
+    width: 20%;
+    transition: 1s;
+    border-radius: 10px;
+    background-color: #A4161A;
+    display: flex;
+    position:absolute;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    font-family: 'cinzel', sans-serif;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 30px;
+    top: 70%;
+    z-index: 3;
+    margin-top: 2.5%;
+    padding-top: 1%;
+  
+    
+}
+
+.planosQuad:hover{
+    transition: 1.5s;
+    
+    height: 60%;
+    width: 60%;
+    background-color: #0B090A;
+    
+}
+
+.planosQuad:hover .beneficios,.planosQuad:hover .beneficios2{
+    opacity: 100;
+    transition: 1s;
+    
+}
+
+.planosQuad:hover h5{
+    margin-top: 0%;
+}
+
+
+
+
+h4,h5{
+  
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: lighter; 
+    margin: 3%;
+}
+
+h5{
+    font-family: 'cinzel', sans-serif;
+    font-size: 30px;
+    margin-top: 12%;
+}
+
+
+.slides img{
+    position: cover;
+    position: relative;
 }
 
 
@@ -326,7 +389,7 @@ a{
 
 #categorias,.destaques,.combos{
     height: 100%;
-    width: 25%;
+    width: 45%;
     position: absolute;
     
     opacity: 0;
@@ -339,7 +402,7 @@ a{
 }
 .contentAbas{
     width: 100%;
-    height: 120%;
+    height: 180%;
     border-left: 5px solid white;
     box-shadow:  0px 0px 4px 0px #000000;
     background-color: white ;
@@ -389,7 +452,7 @@ border-left: 10px solid #A4161A;
     
 }
 .contentBotoes{
-    width: 35%;
+    width: 55%;
     height: 65%;
     
     background-image: linear-gradient(to bottom, #A4161A ,#660708);
@@ -405,199 +468,23 @@ border-left: 10px solid #A4161A;
     color: white;
 }
 
-.rodape{
+.contentSlides{
     width: 100%;
-    height: 5%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
-}
-.containerPlanos{
-    width: 100%;
-    height: 60%;
-
-    background-color: #0B090A;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    
-
-}
-.cabecalhoPlanos{
-    height: 20%;
-    width: 100%;
-    
-    display: flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    font-family: 'Quicksand', sans-serif;
-    background-image: linear-gradient(to bottom, #161A1D,#0B090A );
-}
-.contentPlanos{
-    height: 60%;
-    
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.divFilmes{
-    height: 100%;
-    width: 20%;
-    /* border: 2px solid #660708; */
-}
-.planos{
   
-    width: 40%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.planosTopo{
-    width: 100%;
-    height: 15%;
-    background-color: #660708;
-    background-image: linear-gradient(to bottom, #660708,#A4161A );
-    
-    display: flex;
-  
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Quicksand', sans-serif; 
-    color: white;
-    box-shadow: 1px 10px 5px black;
-    z-index: 2px;
-
-}
-.planosMetade{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    
-}
-.planosMetadeD{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.planosFundo{
-    width: 100%;
-    height: 15%;
-    
-    display: flex;
-}
-
-.planosDescricao{
-    background-color:white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.quadPlanos{
-    width: 20%;
-    height: 100%;
-    background-color: #E5383B ;
-    display: flex;
-    overflow: hidden;
-    
-}
-
-.quadPlanos img{
-   
-}
-
-.triMetade,.triMetade2{
-    background-color: #660708;
-    width: 25%;
-    height: 100%;
-    display: flex;
-    font-weight: 400;
-    
-    justify-content: center;
-    align-items: center;
-    
-}
-.triMetade2{
-    background-color: white;
-    width: 75%;
-    font-size: 15px;
-    display: flex;
-    padding-left: 15px;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    font-size: 15px;
 }
 
 
 
-.fundoMetade,.fundoMetade2{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.fundoMetade2{
-    background-color: #E5383B;
-    display: flex;
-    font-size: 25px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: lighter;
-    font-family: 'Quicksand', sans-serif;
-}
-.fundoMetade{
-    background-color: #660708;
-    display: flex;
-    align-items: center;
-    
-}
-.metadeButton{
-    width: 35%;
-    height: 100%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #660708;
-    
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    cursor: pointer;
-    transition: .4s;
-    border: #0B090A;
-    
-}
-.metadeButton:hover{
-    background-color: #A4161A;
-}
 
 
 
-.imgFilme{
-    height: 100%;
-    width: 100%;
-    
-}
 h2{
     font-size: 30px;
     font-family: 'Quicksand', sans-serif; 
@@ -605,93 +492,39 @@ h2{
     font-weight: lighter;
 }
 
-.icone3d{
-    position: absolute;
-  
-    
-}
-
-.containerSlides{
-    width: 98%;
-    
-    height: 98%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    z-index: 4;
-}
-
-.setaSlidesE,.setaSlidesD{
-    position: absolute;
-    font-size: 50px;
-    color : white;
-    cursor: pointer;
-   
-}
-
-.setaSlidesE:hover,.setaSlidesD:hover{
-    transform: scale(1.1);
-}
-
-.setaSlidesD {left: 95%; top: 50%}
-.setaSlidesE {left: 52%; top: 50%}
-
-.slidesCont{
-    width: 100%;
+.botaoAssinar{
+    width: 20%;
     height: 10%;
-    
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#BA181B,#A4151A);
     display: flex;
-    align-self: flex-end;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    left: 25%;
+    color: white;
+    font-size: 30px;
+    margin-top: 1.5%;
+    font-family: 'CINZEL', serif; 
 }
-.slidesNum {
-    width: 5%;
-    margin: 1%;
-    height: 30%;
-    
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.2);   
-}
+
+
 
 h1{
     font-size: 60px;
+    font-family: 'Cinzel', serif;
+    color:white;
+    font-weight: 400;
+    height: 20px;
+    z-index: 1;
+
+}
+
+
+p{
+    color: white;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    border-bottom: 2px solid #A4161A;
-    font-weight: lighter;
 }
-
-.slidesImgs{
-    display: flex;
-    position: relative;
-    
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    z-index: -1;
-    
-}
-
-.slidesImgs img{
-    position: relative;
-    object-fit: cover;
-    filter: saturate(80%) contrast(110%);
- 
-}
-
-.slidesImgsT{
-   width: 50%;
-   height: 100%;
-   
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75),transparent); 
-   backdrop-filter: blur(1px);
-   position: absolute;
-
-    
-}
-
 
 
 .menuPerfil{
@@ -719,7 +552,7 @@ h1{
     cursor: pointer;
     align-items: center;
     font-size: 30px;
-    font-family: 'Quicksand', sans-serif;
+   
     margin-right: 7.5%;
     transition: 1s;
 }
@@ -731,188 +564,275 @@ h1{
     
 }
 
-.fundoMetadeMetade,.fundoMetadeMetade2{
-    width: 80%;
-    height: 40%;
+.containerPlanos{
+    width: 100%;
+    height: 35%;
+   
+    
+    position: relative;
     display: flex;
-    font-size: 25px;
-    flex-direction: row;
     align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #0B090A,#161A1D);
+    justify-content: center;
+}
 
-    justify-content: left;
+.planosCabecalho{
+    width: 70%;
+    height: 20%;
+
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planosEscolhas,.planosEscolhas2{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161A1D;
+}
+
+.planosEscolhas2{
+    background-color: #A4151A;
+    
+}
+
+.pEscolhaMetade,.pEscolhaMetade2,.pEscolhaMetade3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    color: white;
+    
+}
+
+.pEscolhaMetade2,.pEscolhaMetade3{
+    margin-top: 2%;
+    margin-left: 7.5%;
+    font-family: 'Cinzel', serif;
+    color: #D3D3D3;
+}
+
+.pEscolhaMetade3{
+    font-size: 15px;
+}
+
+
+
+.planosContent{
+    display: flex;
+
+    
+    width: 70%;
+    height: 80%;
+}
+
+h4{
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.planosMetade{
+    height: 100%;
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.beneficios,.beneficios2{
+    width: 100%;
+    height: 40%;
+    opacity: 0;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #0B090A,#161A1D);
+}
+
+.beneficios2 {
+    background-image: linear-gradient(to left, #0B090A,#161A1D);
+}
+
+.beneficiosIcon{
+    height: 80%;
+    margin-left: 1%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left,#BA181B,#660708);
+}
+
+.beneficiosC{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   
 }
-.fundoMetadeMetade2{
+
+
+p{
+    margin: 3.1%;
+
+}
+
+
+
+.beneficiosMetade,.beneficiosMetade2{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 40%;
+}
+
+
+.beneficiosMetade2{
+    justify-content: end;
+}
+
+.planosCombos{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+}
+
+.planoPreco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    justify-content : center;
+    background-color: #A4161A;
+}
+
+.planosOpcoes{
+    width: 100%;
+    height: 27.5%;
+    background-image: linear-gradient(to top, #0B090A,#161A1D);
+    background-color: #161A1D;
+    display: flex;
+    cursor: pointer;
+    z-index: 3;
+    transition: 2s;
+}
+
+.planosOpcoes:hover{
+    background-color: #161A1D;
+    background-image: none;
+    transition: 2s;
+}
+
+.planosC{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planosCheck{
+    width: 25%;
+    height: 20%;
+    border-radius : 50%;
+    border: 2px solid white;
+
+}
+
+.planosTextoC{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+
+}
+
+.planosTexto,.planosTexto2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    color: white;
     font-size: 15px;
     
+    font-family: 'cinzel', sans-serif;
 }
 
-.tri1,.tri2,.tri3{
-    width: 100%;
-    height: 30%;
-   
-   
-    display: flex;
-    background-color: white;
-    color: #660708;
-    
-    font-weight: lighter;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+.planosTexto2{
+    color:#D3D3D3;
     font-family: 'Quicksand', sans-serif;
 }
-.tri1,.tri2{
-    flex-direction: row;
-    display: flex;
-    height: 30%;
-    cursor: pointer;
-}
 
-.metadeTri,.metadeTri2{
-    width: 50%;
+.combosQuad{
     height: 100%;
-    background-color: #660708;
-    
-    color: white;
+    width: 25%;
+   
     display: flex;
-  
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-.metadeTri2{
-    background-color: white;
-    color: #660708;
-    border-bottom: 2px solid white;
-    font-size: 25px;
+    flex-direction: column;
     
 }
 
-.barra_branca{
+.combosBotoes{
     width: 100%;
-    height: 2%;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
-}
-.rodape{
-    width: 100%;
-    color: white;
-    font-size: 25px;
-    background-color: #221f1f;
-    font-family: 'Quicksand', sans-serif;
-}
-.footer-menu {
-    list-style-type: none;
-}
-
-.footer-menu a {
-    display: inline-block;
-    transition: transform 0.2s ease-in-out;
-}
-
-.footer-menu a:hover {
-    transform: translateX(5px);
-}
-.social-list {
+    height: 10%;
+  
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: row;
+
 }
 
-.social-item {
-    --size: 30px;
-    height: var(--size);
-    width: var(--size);
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    color: var(--main-color);
-}
-
-.social-item:hover {
-    background-color: var(--main-color);
-    color: var(--text-color);
-}
-
-.social-item ~ .social-item {
-    margin-left: 20px;
-}
-.titulo1{
-    text-align: center;
-}
-.titulo2{
-    text-align: center;
-}
-.titulo3{
-    text-align: center;
-}
-.titulo4{
-    text-align: center;
-}
-  
-.overlay {
-    height: 0%;
+.combosQuadI{
+    height: 100%;
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: #370617;
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
+    display: flex;
+    overflow: hidden;
     position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: black;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+}
 
-.d2
-        {
-            position: absolute;
-            top: 100px;
-            left: 0px;
-            animation: gira2 5s infinite alternate;
-            width: 0px;
-            height: 200px;
-            animation-delay: 0,5s;
-          
-        }
-@keyframes gira2{
-           
-            0%   {top: 100px; left: 0px; rotate: 0deg; }
-           
-            100% { top: 100px; left: 1100px; rotate: 360deg;
-                   width: 0px; height: 0px;
-                 }
-        }
+
+
+.combosQuadB{
+    
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0B090A;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.combosQuadB:hover{
+    background-color: #161A1D;
+    transition: 1s;
+}
+
+.planosTexto{
+    height: 30%;
+    color: white;
+    font-size: 30px;
+}
+

@@ -85,12 +85,22 @@ function MostrarPerfil(){
 }
 
 
+var precoDiv = document.getElementById('preco');
+let valor = 0;
+let valorb = 0;
+
+
+
 function Mostrarq1(id1,id2,id3,id4){
     $('#'+id1).css("display", "flex");
     $('#'+id2).css("display", "none");
     $('#'+id3).css("display", "none");
     $('#'+id4).css("display", "none");
-    $('#'+id1).animate({width:'60%'},1000);
+    $('#'+id1).animate({width:'100%'},1000);
+    valor += 10 + valorb
+    precoDiv.innerHTML = 'R$' + valor +'.00'
+    valor = 0;
+    
 }
 
 function Mostrarq2(id1,id2,id3,id4){
@@ -98,8 +108,27 @@ function Mostrarq2(id1,id2,id3,id4){
     $('#'+id2).css("display", "flex");
     $('#'+id3).css("display", "none");
     $('#'+id4).css("display", "none");
-    $('#'+id1).animate({width:'45%'},500);
-    $('#'+id2).animate({width:'45%'},500);
+    $('#'+id1).animate({width:'50%'},500);
+    $('#'+id2).animate({width:'50%'},500);
+    valor += 20 + valorb
+    precoDiv.innerHTML = 'R$' + valor +'.00'
+    valor = 0;
+    
+}
+
+function Mostrarq3(id1,id2,id3,id4){
+    $('#'+id1).css("display", "flex");
+    $('#'+id2).css("display", "flex");
+    $('#'+id3).css("display", "flex");
+    $('#'+id4).css("display", "none");
+    $('#'+id1).animate({width:'33%'},500);
+    $('#'+id2).animate({width:'33%'},500);
+    $('#'+id3).animate({width:'33%'},500);
+    valor += 30 + valorb
+    precoDiv.innerHTML = 'R$' + valor +'.00'
+    valor = 0;
+    
+
 }
 
 function Mostrarq4(id1,id2,id3,id4){
@@ -107,26 +136,67 @@ function Mostrarq4(id1,id2,id3,id4){
     $('#'+id2).css("display", "flex");
     $('#'+id3).css("display", "flex");
     $('#'+id4).css("display", "flex");
-    $('#'+id1).animate({width:'20%'},500);
-    $('#'+id2).animate({width:'20%'},500);
-    $('#'+id3).animate({width:'20%'},500);
-    $('#'+id4).animate({width:'20%'},500);
+    $('#'+id1).animate({width:'25%'},500);
+    $('#'+id2).animate({width:'25%'},500);
+    $('#'+id3).animate({width:'25%'},500);
+    $('#'+id4).animate({width:'25%'},500);
+    valor += 40 + valorb
+    precoDiv.innerHTML = 'R$' + valor +'.00'
+    valor = 0;
+    
 }
 
 
 
 setInterval(function() {
-    $('#slides').animate({left:'-85%'},5000);
-    $('#slides').animate({left:'-85%'},1000);
-    $('#slides').animate({left:'-140%'},5000);
-    ('#slides').animate({left:'-140%'},1000);
-    $('#slides').animate({left:'-85%'},1000);
-    ('#slides').animate({left:'-85%'},5000);
+    $('#slides').animate({left:'0%'},1000);
+    $('#slides').animate({left:'0%'},5000);
+    $('#slides').animate({left:'-20%'},1000);
+    $('#slides').animate({left:'-20%'},5000);
+    $('#slides').animate({left:'-40%'},1000);
+    $('#slides').animate({left:'-40%'},5000);
+    $('#slides').animate({left:'-60%'},1000);
+    $('#slides').animate({left:'-60%'},5000);
+    $('#slides').animate({left:'-80%'},1000);
+    $('#slides').animate({left:'-80%'},5000);
+   
+    
     $('#slides').animate({left:0},5000);
+ 
   
   }, 1000);
 
+ 
 function abrirTela(pasta,arquivo){
     let str = '../'+pasta+'/'+arquivo;
     location.href = str;
+}
+
+function Assinatura(){
+  
+    $('#c1').css("background-color", "white");
+    $('#c2').css("background-color", "#161A1D");
+    $('#c3').css("background-color", "#161A1D");
+    
+     
+}
+
+function AssinaturaA(){
+  
+    $('#c2').css("background-color", "white");
+    $('#c1').css("background-color", "#161A1D");
+    $('#c3').css("background-color", "#161A1D");
+   
+ 
+}
+function AssinaturaB(){
+  
+    $('#c2').css("background-color", "#161A1D");
+    $('#c1').css("background-color", "#161A1D");
+    $('#c3').css("background-color", "white");
+   
+    
+  
+    
+ 
 }

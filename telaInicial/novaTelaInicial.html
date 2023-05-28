@@ -22,16 +22,13 @@
     <div class="cabecalho" id="cabe">
         
         <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
-            <img src="../img/Logo.png" alt="" height="50%">
+            <img src="../img/Logo.png"  height="50%">
         </div>
         
         <div class="cabecalhoMeio">
             <!-- Categorias -->
             <div class="cabecalhoBotoes" ><div class="txtBotoes"><div onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</div></div></div>
             <div class="flecha" id = "flecha" onclick="mostrarMenu('categorias','100%');">></div>
-            <!-- Destaques -->
-            <div class="cabecalhoBotoes" ><div class="txtBotoes">DESTAQUES</div></div>
-            <div class="flecha" id = "flecha" onclick="mostrarMenu('destaques','100%');">></div>
             <!-- Combos -->
             <div class="cabecalhoBotoes"><div class="txtBotoes"><div onclick="abrirTela('combos','combos.html');" >COMBOS</div></div></div>
             <div class="flecha" id = "flecha" onclick="mostrarMenu('combos','100%');">></div>
@@ -60,14 +57,7 @@
                     <div class="contentAbas"><h3>Comédia </h3>  </div>               
                 </div>
                 <!-- Destaques -->
-                <div class="destaques"id="destaques">
-                    <div class="contentAbas"><h3>Gato de Botas 2</h3></div>
-                    <div class="contentAbas"><h3>Mad Max        </h3></div>
-                    <div class="contentAbas"><h3>Enrolados      </h3></div>
-                    <div class="contentAbas"><h3>Titanic        </h3></div>
-                    <div class="contentAbas"><h3>Harry Potter   </h3></div> 
-                </div>
-                <!-- Combos -->
+              
                 <div class="combos"id="combos">
                     <div class="contentAbas"><h3>Burguer e CocaCola    </h3> </div>
                     <div class="contentAbas"><h3>Pastel e caldo de cana</h3> </div>
@@ -82,214 +72,198 @@
        
     </div>
 
-    
+    <div class="contentSlides">
+        <h1>ASSISTA EM CASA</h1>
+        <p>OS MELHORES FILMES EM 3D</p>
+        <div class="botaoAssinar">ASSINE</div>
+    </div>
     <div class="content">
-        <div class="contentMetade">
-            <div class="containerSlogan">
-                <div class="textoSlogan">Um jeito novo de assistir em casa.</div>
+        
+        <div class="containerSlides" id="slides">
+           
+            <div class="slides">
+                <div class="slidesGrad">
+                    
+                </div>
+                <img src="../img/TOP.jpg"  width="100%" >
+                
             </div>
-            <div class="containerBotoes">
-                <div class="contentBotoes"onclick ="abrirTela('login','login.html');" id="entrar"><div class= "txtBotoesC">Entrar</div></div>
-                <div class="contentBotoes"onclick ="abrirTela('cadastro','cadastro.html');" id="cadastro"><div class= "txtBotoesC">Cadastrar-se</div></div>
-                <div class="contentBotoes"onclick ="abrirTela('assinatura','assinatura.html');" id="assinar"><div class= "txtBotoesC">Assinar</div></div>
+            <div class="slides">
+                <div class="slidesGrad"></div>
+                <img src="../img/STAR.jpg"  width="100%">
+            </div>
+            <div class="slides">
+                <div class="slidesGrad"></div>
+                <img src="../img/UP.jpg"  width="100%">
+            </div>
+            <div class="slides">
+                <div class="slidesGrad"></div>
+                <img src="../img/THOR.jpg"  width="100%">
+            </div>
+            <div class="slides">
+                <div class="slidesGrad"></div>
+                <img src="../img/FAST.jpg"  width="100%" height="100%">
             </div>
         </div>
-        <div class="contentMetade2">
-            <div class="containerSlides">
-               
-                
-                    <div class="slidesImgs" id="slides">
-                        
-                        <div class="slidesImgs">
-                            <img src="../img/SlideImagem1.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem2.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem3.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem4.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem5.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem6.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem7.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem8.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-                        <div class="slidesImgs">
-                            <img src="../img/SlidesImagem9.png" height="105%">
-                            <div class="slidesImgsT"></div>
-                        </div>
-                    
-                    
-                       
-                        
-                        
-                        
-                        
-                    </div>
-                
-                <!-- <div class="slidesCont" id="slidesCont">
-                    <div class="slidesNum"></div>
-                    <div class="slidesNum"></div>
-                    <div class="slidesNum"></div>
-                </div> -->
-            </div>
-        </div>
+       
     </div>
     
-        <div class="containerPlanos">
-            <div class="cabecalhoPlanos">
-                <h1>PLANOS</h1>
-            </div>
-            <div class="contentPlanos">
-                <div class="planos">
-                    <div class="planosTopo">
-                        2D
-                    </div>
-                    
-                    <div class="planosMetade">
-                        <div class="planosMetadeD" >
-                            <div class="quadPlanos" id = "qq1">
-                                <img src="../img/Harry Potter.jpg " alt="">
-                            </div>
-                            <div class="quadPlanos" id = "qq2">
-                                <img src="../img/filmeCreatureFrom.png" alt="">
-                            </div>
-                            <div class="quadPlanos" id = "qq3">
-                                <img src="../img/filmeAvatar.png " alt="">
-                            </div>
-                            <div class="quadPlanos" id = "qq4">
-                                <img src="../img/SlidesImagem4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="planosMetadeD">
-                            <div class="planosDescricao">
-                                <div class="tri1">
-                                    <div class="triMetade">
-                                        <img src="../img/Check.png" alt="" height="30%" >
-                                    </div>
-                                    <div class="triMetade2">
-                                        <div class="fundoMetadeMetade"> Assista</div>
-                                        <div class="fundoMetadeMetade2"> Filmes Ilimitados</div>  
-                                    </div>
-                                </div>
-                                <div class="tri2">
-                                    <div class="triMetade">
-                                        <img src="../img/Check.png" alt="" height="30%" >
-                                    </div>
-                                    <div class="triMetade2">
-                                        <div class="fundoMetadeMetade"> Ganhe 5</div>
-                                        <div class="fundoMetadeMetade2"> Combos P/MÊS</div>  
-                                    </div>
-                                </div>
-                                <div class="tri3">
-                                    <div class="fundoMetadeMetade"> PLANOS</div>
-                                    <div class="fundoMetadeMetade2"> Preço P/MÊS</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="planosFundo">
-                        <div class="fundoMetade">
-                            <div class="metadeButton" onclick="Mostrarq1('qq1','qq2','qq3','qq4')">1</div>
-                            <div class="metadeButton" onclick="Mostrarq2('qq1','qq2','qq3','qq4')">2</div>
-                            <div class="metadeButton" onclick="Mostrarq4('qq1','qq2','qq3','qq4')">4</div>
-
-                        </div>
-                        <div class="fundoMetade2">
-                            R$ 10,90/MÊS
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="planos">
-                    <div class="planosTopo">
-                        3D
-                    </div>
-                    
-                    <div class="planosMetade">
-                        <div class="planosMetadeD">
-                            <div class="quadPlanos" id="q1">
-                                <img src="../img/Harry Potter.jpg " alt="">
-                            </div>
-                            <div class="quadPlanos" id="q2">
-                                <img src="../img/filmeCreatureFrom.png" alt="">
-                            </div>
-                            <div class="quadPlanos" id="q3">
-                                <img src="../img/filmeAvatar.png " alt="">
-                            </div>
-                            <div class="quadPlanos" id="q4">
-                                <img src="../img/SlidesImagem4.png" alt="">
-                            </div>  
-                        </div>
-                        <div class="planosMetadeD">
-                            <div class="planosDescricao">
-                                <div class="tri1">
-                                    <div class="triMetade">
-                                        <img src="../img/Check.png" alt="" height="30%" >
-                                    </div>
-                                    <div class="triMetade2">
-                                        <div class="fundoMetadeMetade"> Assista</div>
-                                        <div class="fundoMetadeMetade2"> Filmes Ilimitados</div>  
-                                    </div>
-                                </div>
-                                <div class="tri2">
-                                    <div class="triMetade">
-                                        <img src="../img/Check.png" alt="" height="30%" >
-                                    </div>
-                                    <div class="triMetade2">
-                                        <div class="fundoMetadeMetade"> Ganhe 5</div>
-                                        <div class="fundoMetadeMetade2"> Combos P/MÊS</div>  
-                                    </div>
-                                </div>
-                                <div class="tri3">
-                                    <div class="fundoMetadeMetade"> PLANOS</div>
-                                    <div class="fundoMetadeMetade2"> Preço P/MÊS</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="planosFundo">
-                        <div class="fundoMetade">
-                            <div class="metadeButton" onclick="Mostrarq1('q1','q2','q3','q4')">1</div>
-                            <div class="metadeButton" onclick="Mostrarq2('q1','q2','q3','q4')">2</div>
-                            <div class="metadeButton" onclick="Mostrarq4('q1','q2','q3','q4')">4</div>
-                        </div>
-                        <div class="fundoMetade2">
-                            R$ 14,90/MÊS
-                        </div>
-                    </div>
-                    
-                </div>
+    <div class="planosQuad">
+        <h5>Benefícios ></h5>
+        <div class="beneficios">
+            <div class="beneficiosIcon">
+                <img src="../img/america.png" height="80%">
                 
-            </div>   
+            </div>
+            <div class="beneficiosC">
+                <div class="beneficiosMetade">
+                    <h4>ENTREGUE</h4>
+                </div>
+                <div class="beneficiosMetade">
+                    <p>Em toda a américa do Sul</p>
+                </div>
+            </div>
         </div>
-        
+        <div class="beneficios2">
+            <div class="beneficiosC">
+                <div class="beneficiosMetade2">
+                    <h4>VERFICADO</h4>
+                </div>
+                <div class="beneficiosMetade2">
+                    <p>Em toda a américa do Sul</p>
+                </div>
+            </div>
+            <div class="beneficiosIcon">
+                <img src="../img/check.png" height="60%">
+                
+            </div>
+            
+        </div>
+      
+    </div>  
 
-    <div class="d2"><img src="../img/desconto.png" width="200px"></div> 
+    <div class="containerPlanos">
+       <div class="planosCabecalho">
+            <div class="planosEscolhas">
+                <div class="pEscolhaMetade">
+                    <h4>INDIVIDUAL</h4>
+                   
+                </div>
+                <div class="pEscolhaMetade2">
+                    ASSINATURA P/ 1 PESSOA
+                </div>
+            </div>
+            <div class="planosEscolhas2">
+                <div class="pEscolhaMetade">
+                    <h4>FAMÍLIA</h4>
+                </div>
+                <div class="pEscolhaMetade2">
+                    ASSINATURA P/ 4 PESSOAS
+                </div>
+            </div>
+       </div>
+       <div class="planosContent">
+            <div class="planosMetade">
+                <div class="planosCombos">
+                    <div class="combosQuad" id="q1">
+                        <div class="combosQuadI" >
+                            <img src="../img/hamburger.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="combosQuad"  id="q2">
+                        
+                        <div class="combosQuadI">
+                            <img src="../img/batata.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="combosQuad"id="q3">
+                        
+                        <div class="combosQuadI" >
+                            <img src="../img/Pizza.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="combosQuad" id="q4">
+                        
+                        <div class="combosQuadI" >
+                            <img src="../img/Macarrão.jpg"  alt="">
+                        </div>
+            
+                    </div>
+                 
+                </div>
+                <div class="combosBotoes">
+                    <div class="combosQuadB" onclick="Mostrarq1('q1','q2','q3','q4')">1</div>
+                    <div class="combosQuadB" onclick="Mostrarq2('q1','q2','q3','q4')">2</div>
+                    <div class="combosQuadB" onclick="Mostrarq3('q1','q2','q3','q4')">3</div>
+                    <div class="combosQuadB" onclick="Mostrarq4('q1','q2','q3','q4')">4</div>
+                </div>
+                <div class="planoPreco">
+                    <div class="pEscolhaMetade">
+                        <h4>Preço</h4>
+                    </div>
+                    <div class="pEscolhaMetade3" id="preco">
+                        R$
+                    </div>
+                </div>
+            </div>
+            <div class="planosMetade">
+                <div class="planosOpcoes" onclick="Assinatura()">
+                    <div class="planosC">
+                        <div class="planosCheck" id="c1"></div>
+                    </div>
+                    <div class="planosTextoC">
+                        <div class="planosTexto">
+                            MENSAL
+                        </div>
+                        <div class="planosTexto2">
+                            Pague a cada 1 mês
+                        </div>
+                        <div class="planosTexto2">
+                            R$10.00
+                        </div>
+                    </div>
+                </div>
+                <div class="planosOpcoes" onclick="AssinaturaA()">
+                    <div class="planosC">
+                        <div class="planosCheck" id="c2"></div>
+                    </div>
+                    <div class="planosTextoC">
+                        <div class="planosTexto">
+                            TRIMESTRAL
+                        </div>
+                        <div class="planosTexto2">
+                            Pague a cada 3 meses
+                        </div>
+                        <div class="planosTexto2">
+                            R$25.00
+                        </div>
+                    </div>
+                </div>
+                <div class="planosOpcoes" onclick="AssinaturaB()">
+                    <div class="planosC">
+                        <div class="planosCheck" id="c3"></div>
+                    </div>
+                    <div class="planosTextoC">
+                        <div class="planosTexto">
+                            ANUAL
+                        </div>
+                        <div class="planosTexto2">
+                            Pague a cada 1 ano
+                        </div>
+                        <div class="planosTexto2">
+                            R$90.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+    </div>
+
+    
 </body>
     <script src="../jquery-3.6.4.min.js"></script>
     <script src="novaTelaInicial.js"> </script>

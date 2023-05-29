@@ -573,6 +573,7 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 3;
     background-image: linear-gradient(to bottom, #0B090A,#161A1D);
     justify-content: center;
 }
@@ -580,10 +581,11 @@ p{
 .planosCabecalho{
     width: 70%;
     height: 20%;
-
+    background-color: #161A1D;
     margin-top: 2.5%;
     display: flex;
     align-items: center;
+    transition: 1s;
     justify-content: space-between;
 }
 
@@ -596,11 +598,12 @@ p{
     align-items: center;
     justify-content: space-between;
     background-color: #161A1D;
+    transition: 1s;
 }
 
 .planosEscolhas2{
     background-color: #A4151A;
-    
+ 
 }
 
 .pEscolhaMetade,.pEscolhaMetade2,.pEscolhaMetade3{
@@ -616,6 +619,7 @@ p{
     margin-left: 7.5%;
     font-family: 'Cinzel', serif;
     color: #D3D3D3;
+
 }
 
 .pEscolhaMetade3{
@@ -723,7 +727,7 @@ p{
 .planosOpcoes{
     width: 100%;
     height: 27.5%;
-    background-image: linear-gradient(to top, #0B090A,#161A1D);
+    /* background-image: linear-gradient(to top, #0B090A,#161A1D); */
     background-color: #161A1D;
     display: flex;
     cursor: pointer;
@@ -833,6 +837,6 @@ p{
 .planosTexto{
     height: 30%;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 

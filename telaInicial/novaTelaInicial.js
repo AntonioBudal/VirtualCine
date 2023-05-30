@@ -21,14 +21,16 @@ var variavel = queryString("email");
 
 function VerificaBotoes() {
   if(variavel == undefined){
-      document.getElementById('entrar').style.display = 'inline-block';
-      document.getElementById('cadastro').style.display = 'inline-block';
-      document.getElementById('assinar').style.display = 'none';
+      document.getElementById('entrar').style.display = 'flex';
+     
+   
   }
   else{
       document.getElementById('entrar').style.display = 'none';
-      document.getElementById('cadastro').style.display = 'none';
-      document.getElementById('assinar').style.display = 'inline-block';
+      document.getElementById('sininho').style.display = 'flex';
+      document.getElementById('perfil').style.display = 'flex';
+      document.getElementById('notificacao').style.display = 'flex';
+      
   }
 }
 
@@ -150,15 +152,15 @@ function Mostrarq4(id1,id2,id3,id4){
 
 setInterval(function() {
     $('#slides').animate({left:'0%'},1000);
-    $('#slides').animate({left:'0%'},5000);
+    $('#slides').animate({left:'0%'},2000);
     $('#slides').animate({left:'-20%'},1000);
-    $('#slides').animate({left:'-20%'},5000);
+    $('#slides').animate({left:'-20%'},2500);
     $('#slides').animate({left:'-40%'},1000);
-    $('#slides').animate({left:'-40%'},5000);
+    $('#slides').animate({left:'-40%'},2500);
     $('#slides').animate({left:'-60%'},1000);
-    $('#slides').animate({left:'-60%'},5000);
+    $('#slides').animate({left:'-60%'},2500);
     $('#slides').animate({left:'-80%'},1000);
-    $('#slides').animate({left:'-80%'},5000);
+    $('#slides').animate({left:'-80%'},2500);
    
     
     $('#slides').animate({left:0},5000);

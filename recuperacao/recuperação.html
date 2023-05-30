@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logos das Redes Socias -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="recuperação.css">
+    <title>Login</title>
+
+</head>
+<script src="recuperacao.js"></script>
+
+<body>
+    <!-- Caixa de fundo -->
+    <div class="caixa-principal">
+        <div id="login">
+            <form class="card">
+                <div class="card-header">
+                    <h2>Esqueci meu emaill / senha</h2>
+                </div>
+                <br>
+
+                Como você prefere redefinir sua senha?
+                <br> <br>
+
+                <div class="bolinha">
+                    <input class="radio" type="radio" id="checkbox1" name="radio" value="value1" />
+                    <label onchange="BolinhasDoidas(1);" onclick="MostrarCheckbox('Emailcaixa');"
+                        for="checkbox1"></label>
+                    <div class="Email" id="Emailcaixa">Email</div>
+
+                    <br>
+
+                    <input class="radio" type="radio" id="checkbox2" name="radio" value="value2" />
+                    <label onchange="BolinhasDoidas(2);" onclick="MostrarCheckbox('MensagemSMS');"
+                        for="checkbox2"></label>
+                    <div class="MensagemSMS" id="MensagemSMS">Mensagem de texto</div>
+
+
+                </div>
+
+
+
+
+
+
+            </form>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="card-content">
+
+
+            <div class="card-content-area">
+                <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
+                <br>
+
+                <form class="form">
+                    <input class="Emailcaixa" type="email" name="email" id="usuario" autocomplete="off"
+                        placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+                        
+                        <div id="mensagemErroEmail" style="color: red;"></div>
+                    <div class="container">
+                        <div class="telefone" id="telefone">
+
+                            <input class="caixa_telefone" id="dddPais" type="text" autocomplete="off"
+                                placeholder="Digite seu telefone">
+                                <div class="spanTel" id="mensagemErroTelefone" style="color: red;"></div>
+
+                </form>
+
+
+                <div class="bandeiraemenor">
+                    <div class="caixadabandeira">
+                        <img class="bandeira" alt="bandeira" src="img/brasil.png" id="trocaBandeira">
+                    </div>
+                    <div class="sinalmenor">
+                        <img class="img_sinalmenor" src="./img/sinaldemenor-removebg-preview.png"
+                            onclick="exibirBandeiras()">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="paises" id="listaBandeiras">
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/brasil.png', '1', '(+55)');"> <img
+                    src="./img/brasil.png" alt="brasil" width="25px" height="25px" id="1">‎ Brasil (+55)</div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/argentina.png', '2', '(+54)');">
+                <img src="./img/argentina.png" alt="argentina" width="25px" height="25px" id="2">‎ Argentina
+                (+54)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/bolivia.png', '3', '(+591)');"> <img
+                    src="./img/bolivia.png" alt="bolivia" width="25px" height="25px" id="3">‎ Bolívia (+591)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/chile.png','4', '(+56)');"> <img
+                    src="./img/chile.png" alt="chile" width="25px" height="25px" id="4">‎ Chile (+56)</div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/colombia.png','5', '(+57)');"> <img
+                    src="./img/colombia.png" alt="colombia" width="25px" height="25px" id="5">‎ Colombia (+57)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/equador.png','6', '(+593)');"> <img
+                    src="./img/equador.png" alt="equador" width="25px" height="25px" id="6">‎ Equador (+593)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/Guiana.png','7', '+592');"> <img
+                    src="./img/Guiana.png" alt="guiana" width="25px" height="25px" id="7">‎ Guiana (+592)</div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/paraguai.png','8', '(+595)');"> <img
+                    src="./img/paraguai.png" alt="paraguai" width="25px" height="25px" id="8">‎ Paraguai (+595)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/peru.png','9', '(+51)');"> <img
+                    src="./img/peru.png" alt="peru" width="25px" height="25px" id="9">‎ Peru (+51)</div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/suriname.png','10', '(+597)');">
+                <img src="./img/suriname.png" alt="suriname" width="25px" height="25px" id="10">‎ Suriname
+                (+597)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/uruguai.png','11', '(+598)');"> <img
+                    src="./img/uruguai.png" alt="uruguai" width="25px" height="25px" id="11">‎ Uruguai (+598)
+            </div>
+            <div class="pais" type="checkbox" onclick="trocarBandeiras('./img/venezuela.png','12', '(+58)');">
+                <img src="./img/venezuela.png" alt="venezuela" width="25px" height="25px" id="12">‎ Venezuela
+                (+58)
+            </div>
+        </div>
+
+        <div class="caixabranca" id="caixabranca">
+        </div>
+
+    </div>
+
+    <div class="card-footer">
+        <input href="../inserir_cód_sms/inserir_cód_sms.html" type="submit" value="Enviar" class="submit"
+            onclick="validarFormulario();">
+        <br>
+        <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
+    </div>
+    </form>
+    </div>
+
+    <style>
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+
+    </form>
+    <!-- Container, dos login pelas redes socias.-->
+
+</body>
+
+
+</script>
+<script src="../jquery-3.6.4.min.js"></script>
+
+</html>

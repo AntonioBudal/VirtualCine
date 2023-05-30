@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #323232;
+  border: none;
+}
+
+body {
+  background-image: url('../img/cinema.jpg');
+  
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+a:hover {  /* hover do botão voltar */
+  color: rgb(150, 0, 0);
+}
+
+.caixa-principal { /* container principal */
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+   padding: 20px 30px;
+  margin-top: 10vh; 
+  border-radius: 8px;
+  text-align: center;
+  border: solid 2px rgb(9, 41, 56);
+  text-align: center;
+  border: solid 2px rgb(9, 41, 56);
+  position: absolute;
+  top: 14%;
+  left: 37%;
+}
+
+
+form { /* div formulario */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+input {  /* entrada do código */
+  border: 2px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: black;
+}
+
+input:focus { /* hover do bloquinho do código */
+  border: 2px solid rgb(16, 14, 61);
+}
+
+
+
+.submit{ /* botão entrar */
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  color: #FFF;
+  background-color:  rgb(186, 0 , 1);
+  font-weight: bold;
+  font-size: 15px;
+  border: solid 1px rgb(88, 0, 0);;
+}
+
+.submit:hover{
+  background-color: rgb(88, 1 , 0);
+  transition: .5s;
+}
+
+
+
+/* Container do voltar */
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  font-weight: bold;
+  color: #7c0000;
+}
+
+  
+  .card /* texto (enviamos um código....) */
+  {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+
+
+

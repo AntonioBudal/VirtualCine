@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="novaTelaInicial.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Virtual Cine</title>
 </head>
 <body onload="VerificaBotoes()">
@@ -43,6 +45,9 @@
             <!-- <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
             </div> -->
+            <div class="botaoCadastro" onclick ="abrirTela('login','login.html');">ENTRE</div>
+            <div class="notificacao"> 1</div>
+            <img src="../img/Sininho.png" width=45px class="sininho"></a>
             <a href="#" onclick="MostrarPerfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
         </div>
         <div class="containerAbaPrincipal">
@@ -75,7 +80,7 @@
     <div class="contentSlides">
         <h1>ASSISTA EM CASA</h1>
         <p>OS MELHORES FILMES EM 3D</p>
-        <div class="botaoAssinar">ASSINE</div>
+        <div class="botaoAssinar">Assine</div>
     </div>
     <div class="content">
         
@@ -109,7 +114,7 @@
     </div>
     
     <div class="planosQuad">
-        <h5>Benefícios ></h5>
+        <h5>Benefícios </h5>
         <div class="beneficios">
             <div class="beneficiosIcon">
                 <img src="../img/america.png" height="80%">
@@ -262,7 +267,74 @@
        </div>
 
     </div>
+    <div class="rodape">
+        <table width="100%" >
+            <tr height = "100%">
+                <td width="25%">
+                    <div>
+                        <p class="titulo1">Virtual Cine</p>
+                        <ul class="footer-menu">
+                            <li><a href="#" class="txtRodape">Sobre Nós</a></li>
+                            <li><a href="#" class="txtRodape">Meu perfil</a></li>
+                            <li><a href="#" class="txtRodape">Planos de pagamento</a></li>
+                            <li><a href="#" class="txtRodape">Contatos</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width="25%">
+                    <div>
+                        <p class="titulo2">Aplicativo</p>
+                        <ul class="footer-menu">
+                            <li> 
+                                <a href="#">
+                                <img src="../img/google-play.png" alt="" width="50%">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../img/apple-store.png" alt="" width="50%">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </td>
+                <td width="25%">
+                    
+                        <div class="social-list">
+                            <p class="titulo3">Rede Sociais</p>
+                            <ul class="footer-menu">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </ul>
+                        </div>
 
+                        
+                    
+                </td>
+                <td width="25%">
+                    <div>
+                        <p class="titulo1">Políticas</p>
+                        <ul class="footer-menu">
+                            <li><a href="#" class="txtRodape">Prevenções</a></li>
+                        <li><a href="#" class="txtRodape">Privacidade e Segurança</a></li>
+                        <li><a href="#" class="txtRodape">Trocas e Cancelamentos</a></li>
+                        <li><a href="#" class="txtRodape">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="rodapeFinal">Virtual Cine 2023 - Site de filmes 3D</div>
+    
     
 </body>
     <script src="../jquery-3.6.4.min.js"></script>

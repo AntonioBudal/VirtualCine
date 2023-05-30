@@ -209,11 +209,11 @@ var op5 = document.getElementsByClassName('planosEscolhas2');
 
 
 function Individual(){
-    for (var i = 0; i < op.length; i++) {
-        op[i].style.backgroundImage = 'linear-gradient(to top, #0B090A,#161A1D)';
+    // for (var i = 0; i < op.length; i++) {
+    //     op[i].style.backgroundImage = 'linear-gradient(to top, #0B090A,#161A1D)';
         
         
-    }
+    // }
     op2[0].style.backgroundColor = '#161A1D';
     
     op3[0].style.backgroundImage = 'linear-gradient(to bottom,#A4161A,#660708)';
@@ -222,11 +222,11 @@ function Individual(){
 }
 
 function Familia(){
-    for (var i = 0; i < op.length; i++) {
+    // for (var i = 0; i < op.length; i++) {
         
-        op[i].style.backgroundImage = 'linear-gradient(to bottom,#A4161A,#660708)';
+    //     op[i].style.backgroundImage = 'linear-gradient(to bottom,#A4161A,#660708)';
 
-    }
+    // }
     op2[0].style.backgroundColor = '#A4161A';
     op3[0].style.backgroundImage = 'linear-gradient(to top, #0B090A,#161A1D)';
     op5[0].style.borderBottom = '50px solid #A4151A'

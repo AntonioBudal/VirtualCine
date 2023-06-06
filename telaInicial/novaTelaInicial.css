@@ -956,9 +956,14 @@ td{
     border-radius: 30px;
     font-family: "Cairo", sans-serif;
     font-weight: 700;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+
+
+  
   .botaoCadastro{
     height: 50%;
     width: 50%;

@@ -7,91 +7,35 @@
     <title>VIRTUAL CINE</title>
     <link rel="stylesheet" href="configuracoes.css">
 </head>
-<body>
+<body>  
+    <div class="principal">
+        <div class="menu">
+            <div class="botoes" onclick="mudarConfiguracao('planos')">PLANOS</div>
+            <div class="botoes" onclick="mudarConfiguracao('conta')">CONTA</div>
+            <div class="botoes" onclick="mudarConfiguracao('fale')">FALE DE CONOSCO</div>
+            <div class="botoes" onclick="mudarConfiguracao('seguranca')">SEGURANCA</div>
+            <div class="botoes" onclick="mudarConfiguracao('termos')">TERMOS DE USO</div>
+        </div>
+        <div class="chay">
+            <div class="quadPlanos" id="planos">    
 
-        <div class="cabecalho">
-            <div class="cabecalhoBorda">
-                <div class="logoTexto" onclick="window.location='../telaInicial/novaTelaInicial.html';">
-                    <img src="../img/Logo.png" alt="" height="50%">
-                </div>
             </div>
-            <div class="cabecalhoMeio">
-                
+            <div class="quadConta" id="conta">     
+
             </div>
-            <div class="cabecalhoBorda2">
+            <div class="quadFaleConosco" id="fale">      
+
+            </div>
+            <div class="quadSeguranca" id="seguranca"> 
+
+            </div>
+            <div class="quadTermosUso" id="termos">    
                 
             </div>
         </div>
-        
-        <div class="content">
-            <div class="contentMetade">
+    </div>
 
-                <div class="cabecalhoContent">
-                    <div class="textoContent1">
-                        PAGAMENTOS
-                    </div>
-                    <div class="textoContent2">
-                        CARTÕES
-                    </div>
-                </div>
-
-                <div class="contentCards">
-                    <div class="cardCabecalho"></div>
-                    <div class="cardContent">
-
-                    </div>
-                    <div class="cardCabecalho"></div>
-                </div>
-                <div class="contentCards">
-                    <div class="cardCabecalho"></div>
-                    <div class="cardContent">
-                        <div class="cardContentMetade">
-                            1234 5678 912 3456
-                        </div>
-                        <div class="cardContentMetade2">
-                            <div class="cardBox">
-                                <div class="boxMetade">
-                                    <h1>01/23</h1>
-                                </div>
-                                <div class="boxMetade">
-                                    VAL
-                                </div>
-                            </div>
-                            <div class="cardBox">
-                                <div class="boxMetade">
-                                    <h1>321</h1>
-                                </div>
-                                <div class="boxMetade">
-                                    CVV
-                                </div>
-                            </div>
-                            
-                          
-                        </div>
-                        <div class="cardContentMetade3">
-                            <div class="cardBox">
-                                <div class="boxMetade">
-                                   
-                                </div>
-                                <div class="boxMetade">
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nomeContent">
-                        KAYQUE M.B.M.
-                    </div>
-                    <div class="cardRodape"></div>
-                </div>
-            </div>
-            <div class="contentMetade">
-
-            </div>
-            <div class="menuLateral"></div>
-        </div>
-        
-    
-   
 </body>
+<script src="configuracoes.js"></script>
+<script src="../jquery-3.6.4.min.js"></script>
 </html>

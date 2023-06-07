@@ -4,14 +4,15 @@
 
 *{
     font-family: "Cairo", sans-serif;
+    font-weight: lighter;
 }
 
 body,html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #161A1D;
-   
+    background-color: #0B090A;
+    font-family: "Cairo", sans-serif;
 }
 
 /* - Fundo principal - */
@@ -19,30 +20,53 @@ body,html {
     
     width: 100%;
     height:100vh;
-    
-    background-color: #161A1D;
+    font-family: "Cairo", sans-serif;
+    background-color: #0B090A;
 }
+
+.cabecalho{
+    
+    width: 100%;
+    height: 12.5%;
+    background-color: #660708;
+    font-family: "Cairo", sans-serif;
+}
+
 
 .menu{
     width: 100%;
-    height: 12.5%;
-
+    height: 10%;
+    font-family: "Cairo", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #161A1D;
+    font-weight: lighter;
+  
 }
 
 .botoes{
   
     height: 100%;
     width: 15%;
+   
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    background-color: #161A1D;
+    
+    transition: 2s;
 
+}
+
+.botoes:hover{
+    
+    margin-top: 3%;
+    height: 103%;
+    transition: 2s;
 }
 
 .quadPlanos,.quadConta,.quadFaleConosco,.quadSeguranca,.quadTermosUso{
@@ -51,6 +75,7 @@ body,html {
     justify-content: center;
     width: 100%;
     height: 100%;
+    background-color: #0B090A;
 }
 
 .chay{
@@ -59,23 +84,45 @@ body,html {
     height: 100%;
 }
 
-
-.quadPlanos{
-    background-color: #dad7cd;
+.faleConosco{
+    background-color: #161A1D;
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
 }
 
-.quadConta{
-    background-color: #a3b18a;
+.cabecalhoFaleConosco{
+    width: 100%;
+    height: 10%;
+    background-color: #D3D3D3;
+
 }
 
-.quadFaleConosco{
-    background-color: #588157;
+.fotoContent{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border-bottom: 10px solid white;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
 }
 
-.quadSeguranca{
-    background-color: #3a5a40;
-}
-
-.quadTermosUso{
-    background-color: #344e41;
+.perfil{
+    width: 20%;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
 }

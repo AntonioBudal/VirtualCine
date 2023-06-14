@@ -178,7 +178,7 @@ body,html {
 
 .botaoProlongar{
     width: 60%;
-    height: 15%;
+    height: 10%;
     margin-top: 5%;
     background-image: linear-gradient(to left, #A4161A ,#660708);
     color: white;
@@ -189,4 +189,198 @@ body,html {
     font-weight: 500;
     font-size: 25px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+/** Conta **/
+
+.quadConta{
+    justify-content: space-around;
+    display: flex;
+}
+
+.caixaConta,.caixaConta2{
+
+    display: flex;
+    align-items: center;
+
+    width: 20%;
+    background-color: #161A1D;
+    height: 80%;
+    overflow: hidden;
+
+    flex-direction: column;
+
+}
+
+.caixaConta2{
+    width: 60%;
+}
+
+.perfilFundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #D3D3D3;
+}
+
+.perfil{
+    width: 50%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    
+    justify-content: center;
+    overflow: hidden;
+}
+
+.botaoMudar{
+    width: 60%;
+    height: 10%;
+    margin-top: 5%;
+    background-image: linear-gradient(to left, #A4161A ,#660708);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
+}
+
+.caixaNome{
+    width: 90%;
+    height: 10%;
+   
+    
+    border: 2px solid white;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
+h1{
+    font-size: 10px;
+    font-family: "Cairo", sans-serif;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.nome{
+    background-color: #A4161A;
+    border: 2px solid #A4161A;
+    height: 5%;
+    width: 30%;
+    margin-top: 10%;
+    margin-right: 60%;
+    color: white;
+    font-size: 12.5px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.informacoesPessoais{
+    width: 40%;
+    height: 15%;
+    
+    color: white;
+    font-size: 32.5px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+.caixaConta2{
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.caixaEmail,.caixaTelefone{
+    height: 20%;
+    width: 90%;
+    margin-top: 2.5%;
+    display:flex;
+    
+}
+
+.email{
+    height: 100%;
+    width: 35%;
+    font-size: 21px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-right: 5px solid #A4161A;
+    
+}
+
+.emails{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.emails:hover{
+    background-color: #0B090A;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/** Fale Conosco **/
+
+.caixaFaleConosco{
+    height: 80%;
+    width: 40%;
+    background-color: #161A1D;
+    display: flex;
+    border-radius: 5%;
+    justify-content: baseline;
+    overflow: hidden;
+    flex-direction: column;
+ 
+}
+
+.cabecalhoFaleConosco{
+    width: 100%;
+    height: 20%;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Cairo", sans-serif; 
+    font-size: 30px;
+}
+
+.nomeBox{
+    width: 100%;
+    height: 5%;
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 2px solid white;
+}
+
+input{
+    width: 80%;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }

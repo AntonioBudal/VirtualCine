@@ -6,35 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIRTUAL CINE</title>
     <link rel="stylesheet" href="configuracoes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>  
     <div class="principal">
-        <div class="cabecalho"></div>
+        <div class="cabecalho">
+            <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
+               <img src="../img/Logo.png"  height="60%">
+            </div>
+        </div>
         <div class="menu">
             <div class="botoes" onclick="mudarConfiguracao('planos')">Planos</div>
             <div class="botoes" onclick="mudarConfiguracao('conta')">Conta</div>
-            <div class="botoes" onclick="mudarConfiguracao('fale')">Fale Conosoco</div>
+            <div class="botoes" onclick="mudarConfiguracao('fale')">Fale conosoco</div>
             <div class="botoes" onclick="mudarConfiguracao('seguranca')">Segurança</div>
-            <div class="botoes" onclick="mudarConfiguracao('termos')">Termos de Uso</div>
+            <div class="botoes" onclick="mudarConfiguracao('termos')">Termos de uso</div>
         </div>
-        <div class="chay">
+        <div class="content">
             <div class="quadPlanos" id="planos">    
-               
+                <div class="caixaPlanos">
+                    <div class="cabecalhoCP"></div>
+                    <div class="planoImg">
+                        <img src="../img/TOP.jpg" alt="" width="110%">
+                        <div class="textoPlano">
+                            PLANO FAMÍLIA
+                        </div>
+                       
+                    </div>
+                    <div class="boxTempo">
+                            <div class="tempoRestante">
+                                <div class="textoRestante"> 180 DIAS</div>
+                            </div>
+                    </div>
+
+                    <div class="botaoProlongar">
+                        Extenda
+                    </div>
+                </div>
+                <div class="caixaPlanos2">
+                    
+                </div>
             </div>
             <div class="quadConta" id="conta">     
                 
             </div>
             <div class="quadFaleConosco" id="fale">      
-                <div class="faleConosco">
-                    <div class="cabecalhoFaleConosco"></div>
-                    <div class="fotoContent">
-                        <div class="perfil">
-                            <img src="../img/perfil.png" alt="" width="50%"  ></img >
-                        </div>
-                        Nome da Conta
-                    </div>
-                </div>
-                
+            
             </div>
             <div class="quadSeguranca" id="seguranca"> 
 

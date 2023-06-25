@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="novocadastro.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container-principal">
+        <div id="cabecalho-container">
+            
+            <div class="cabecalho-opcoes" onclick="mudarForm('u')">
+                <img src="../img/user.png" alt="" width="55px" height="50px"></img>
+            </div>
+            
+            <div class="cabecalho-opcoes" onclick="mudarForm('r')">
+                <img src="../img/rest.png" alt="" width="55px" height="50px"></img>
+            </div>
+            
+            <div class="cabecalho-opcoes"onclick="mudarForm('p')">
+                <img src="../img/movi.png" alt="" width="55px" height="50px"></img>
+            </div>
+
+        </div>
+
+        <div id="form-container">
+            
+            <form action="" id="u">
+                <div class="caixa-inteira teste">
+                    <img src="../img/Logo.png" alt="" height="90%"></img>
+                    
+                </div>
+                Cadastro do usuário
+                <div class="caixa-inteira">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                </div>
+                <div class="caixa-inteira">
+                    
+                </div>
+                <a href="../telaInicial//novaTelaInicial.html"> Voltar</a>
+            </form>
+            
+            <form action="" id="r">
+                <div class="caixa-inteira teste">
+                    <img src="../img/Logo.png" alt="" height="90%"></img>
+                    
+                </div>
+                Cadastro do restaurante
+                <div class="caixa-inteira">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                </div>
+                <div class="caixa-inteira">
+                    
+                </div>
+            </form>
+            
+            <form action="" id="p">
+                <div class="caixa-inteira teste">
+                    <img src="../img/Logo.png" alt="" height="90%"></img>
+                    
+                </div>
+                Cadastro da produtora
+                <div class="caixa-inteira">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                </div>
+                <div class="caixa-inteira">
+                    
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+    <script src="novocadastro.js"></script>
+    <script src="../jquery-3.6.4.min.js"></script>
+</html>

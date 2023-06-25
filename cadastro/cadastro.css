@@ -13,9 +13,6 @@
     width: 100%;
   }
 
-
-
-  
   a {
     color: #323232;
   }
@@ -24,6 +21,7 @@
     padding-top: 5vh;
     background-image: url('../img/cinema.jpg');
     background-size: cover;
+    
     background-position-y: -150px;
   }
   

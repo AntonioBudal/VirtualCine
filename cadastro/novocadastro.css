@@ -1,0 +1,149 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    color: #161A1D;
+    border: none;
+
+}
+
+body {
+    background-image : linear-gradient(to bottom, #161A1D, #0B090A);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    background-image: url('../img/cinema.jpg');
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-position-y: -150px;
+  
+}
+
+#container-principal{
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    border-radius: 2.5%;
+    overflow: hidden;
+}
+
+#cabecalho-container{
+    width: 100%;
+    height: 14%;
+    margin-bottom: 1%;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.cabecalho-opcoes{
+    width: 25%;
+    border-radius: 2.5%;
+    height: 100%;
+    
+    background-color: white;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-opcoes:hover{
+    width: 40%;
+    transition: 1s;
+}
+
+#form-container{
+    width: 100%;
+    height: 0%;
+    display: flex;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    background-color: #161A1D;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #161A1D;
+  
+}
+
+.caixa-inteira{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+   
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.caixa-inteira img {
+    padding: 1%;
+ 
+}
+
+.teste{
+   
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#u,#r,#p{
+    display: none;
+    padding: 5%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+
+    color: white;
+    background-color: #161A1D;
+  }
+
+  input {
+    border-bottom: 2px solid white ;
+    font-size: 1.5rem;
+    transition: 1s;
+    
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  
+  input:focus {
+    border-color: #a4161a;
+    transition: .5s;
+    
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(186, 0 , 1);
+    color: #FFF;
+    border: none;
+    
+    height: 40px;
+    cursor: pointer;
+  }
+
+  a{
+    color: white;
+  }
+
+

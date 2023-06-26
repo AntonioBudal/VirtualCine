@@ -13,15 +13,18 @@
         <div id="cabecalho-container">
             
             <div class="cabecalho-opcoes" onclick="mudarForm('u')">
-                <img src="../img/user.png" alt="" width="55px" height="50px"></img>
+                <img src="../img/Usuario.png" alt="" height="50%"></img>
+                Usuário
             </div>
             
             <div class="cabecalho-opcoes" onclick="mudarForm('r')">
-                <img src="../img/rest.png" alt="" width="55px" height="50px"></img>
+                <img src="../img/Restaurante.png" alt=""  height="50%x"></img>
+                Restaurante
             </div>
             
             <div class="cabecalho-opcoes"onclick="mudarForm('p')">
-                <img src="../img/movi.png" alt="" width="55px" height="50px"></img>
+                <img src="../img/produtora.png" alt=""  height="50%"></img>
+                Filme
             </div>
 
         </div>
@@ -35,13 +38,31 @@
                 </div>
                 Cadastro do usuário
                 <div class="caixa-inteira">
-                    <label for="name">Nome</label>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>    
+                </div>
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="name">Nome</label>
                     <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+                    </div>
                 </div>
-                <div class="caixa-inteira">
-                    
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Senha</label>
+                        <input type="text" name="senha" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">Confirmação de senha</label>
+                        <input type="text" name="confirmacaoSenha" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+                    </div>
                 </div>
-                <a href="../telaInicial//novaTelaInicial.html"> Voltar</a>
+              
+                
             </form>
             
             <form action="" id="r">
@@ -62,7 +83,7 @@
             <form action="" id="p">
                 <div class="caixa-inteira teste">
                     <img src="../img/Logo.png" alt="" height="90%"></img>
-                    
+                   
                 </div>
                 Cadastro da produtora
                 <div class="caixa-inteira">

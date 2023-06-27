@@ -13,17 +13,17 @@
         <div id="cabecalho-container">
             
             <div class="cabecalho-opcoes" onclick="mudarForm('u')">
-                <img src="../img/Usuario.png" alt="" height="50%"></img>
+                <img src="../img/Usuario.png" alt="" height="30%"></img>
                 Usuário
             </div>
             
             <div class="cabecalho-opcoes" onclick="mudarForm('r')">
-                <img src="../img/Restaurante.png" alt=""  height="50%x"></img>
+                <img src="../img/Restaurante.png" alt=""  height="30%"></img>
                 Restaurante
             </div>
             
             <div class="cabecalho-opcoes"onclick="mudarForm('p')">
-                <img src="../img/produtora.png" alt=""  height="50%"></img>
+                <img src="../img/produtora.png" alt=""  height="30%"></img>
                 Filme
             </div>
 
@@ -31,7 +31,7 @@
 
         <div id="form-container">
             
-            <form action="" id="u">
+            <form action="cadastro.php" method="post" id="u"> 
                 <div class="caixa-inteira teste">
                     <img src="../img/Logo.png" alt="" height="90%"></img>
                     
@@ -61,13 +61,19 @@
                         <input type="text" name="confirmacaoSenha" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
                     </div>
                 </div>
-              
+
+                <div class="caixa-inteira">
+                    <input id="btn-submit" type="submit" value="Registrar" onclick="window.location='../telaInicial/novaTelaInicial';">
+                </div>
+                
+                <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
                 
             </form>
             
-            <form action="" id="r">
+            <form action="restaurante.php" method="post" id="r">
                 <div class="caixa-inteira teste">
                     <img src="../img/Logo.png" alt="" height="90%"></img>
+                    
                     
                 </div>
                 Cadastro do restaurante
@@ -75,24 +81,84 @@
                     <label for="name">Nome</label>
                     <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
                 </div>
-                <div class="caixa-inteira">
-                    
+               
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Senha</label>
+                        <input type="text" name="senha" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Confirme o seu telefone   " data-equal="password">
+                    </div>
                 </div>
+
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Digite seu Endereço">
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">cnpj</label>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="Digite novamente sua cnpj">
+                    </div>
+                </div>
+
+
+                <div class="caixa-inteira">
+                    <input id="btn-submit" type="submit" value="Registrar" onclick="window.location='../telaInicial/novaTelaInicial';">
+                </div>
+
+                <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
+
             </form>
             
-            <form action="" id="p">
+            <form action="filme.php" method="post"  id="p">
                 <div class="caixa-inteira teste">
                     <img src="../img/Logo.png" alt="" height="90%"></img>
                    
                 </div>
                 Cadastro da produtora
-                <div class="caixa-inteira">
-                    <label for="name">Nome</label>
-                    <input type="text" name="nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                
+                
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Nome</label>
+                        <input type="text" name="propietario" id="propietario" placeholder="Digite o propietario">
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Digite o Endereço">
+                    </div>
+                </div>
+
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Senha</label>
+                        <input type="text" name="senha" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">Fundador</label>
+                        <input type="text" name="Fundador" id="Fundador" placeholder="Digite o Fundador">
+                    </div>
+                </div>
+
+                <div class="caixa-inteira row">
+                    <div class="caixa-metade">
+                        <label for="lastname">Propietário</label>
+                        <input type="text" name="propietario" id="propietario" placeholder="Digite o propietario">
+                    </div>
+                    <div class="caixa-metade">
+                        <label for="passconfirmation">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Digite o Endereço">
+                    </div>
                 </div>
                 <div class="caixa-inteira">
-                    
+                    <input id="btn-submit" type="submit" value="Registrar" onclick="window.location='../telaInicial/novaTelaInicial';">
                 </div>
+
+                <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
+
             </form>
 
         </div>

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 
-
-
 body,html {
     margin: 0;
     padding: 0;
@@ -324,16 +322,23 @@ h1{
 }
 
 .emails{
-    height: 100%;
+    height: 60%;
     width: 65%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
     font-family: "Cairo", sans-serif;
     
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
     transition: 1s;
+}
+
+.emails img{
+    filter: invert();
 }
 
 .emails:hover{
@@ -385,4 +390,73 @@ textarea:focus, input:focus{
     height: 10%;
     margin-top: 5%;
     color: white;
+}
+
+.caixaMudar{
+    display: none;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    
+    
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #161A1D,#0b090a)
+}
+
+.cabecalhoMudar{
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    font-size: 15px;
+    background-color: #161A1D;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+
+}
+
+input{
+    outline: none;
+    border: none;
+    height: 20%;
+    width: 95%;
+    padding: 1%;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.x{
+    background-color: #A4161A;
+    width: 1.5%;
+    height: 10%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 10px;
+    left: 92.5%;
+    position: absolute;
+    transition: 1s;
+}
+
+.x:hover{
+    background-color: transparent;
+    background-color: #660708;
+    transition: 1s;
+}
+.botao{
+    width: 20%;
+    height: 30%;
+    background-color: #A4161A;
+    margin-top: 1%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }

@@ -7,11 +7,11 @@
         
         $confirmacaoSenha = $_POST["confirmacaoSenha"];
         
-        $comando = $pdo->prepare("INSERT INTO usuario(nome,sobrenome,email,senha,confirmacaoSenha) VALUES ('$nome','$sobrenome', '$email','$senha', '$confirmacaoSenha')");
+        $comando = $pdo->prepare("INSERT INTO usuario(nome,sobrenome,email,senha) VALUES ('$nome','$sobrenome', '$email','$senha')");
 
         $resultado = $comando->execute();
         
-        header("location: cadastro.html");
+        header("location: novocadastro.html");
         
     ?>
  

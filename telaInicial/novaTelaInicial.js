@@ -22,7 +22,9 @@ var variavel = queryString("email");
 function VerificaBotoes() {
   if(variavel == undefined){
       document.getElementById('entrar').style.display = 'flex';
-     
+      document.getElementById('sininho').style.display =     'none';
+      document.getElementById('perfil').style.display =      'none';
+      document.getElementById('notificacao').style.display = 'none';
    
   }
   else{

@@ -50,14 +50,14 @@ function addCarrinho(nomecombo,imagem1,imagem2,preco){
     var img1 = $("<img>", {
       src: imagem1,
       height: "100%",
-      width: "125%",
+      width: "150%",
       overflow: "hidden",
       alt: "..."
     });
     var img2 = $("<img>", {
       src: imagem2,
       height: "100%",
-      width: "125%",
+      width: "150%",
       overflow: "hidden",
       alt: "..."
     });

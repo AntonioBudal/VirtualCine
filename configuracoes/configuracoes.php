@@ -83,14 +83,14 @@
                     </div>
                 </div>
                 <div class="caixaPlanos2">
-                    
+                     <h2>Planos</h2>
                 </div>
             </div>
             <div class="quadConta" id="conta">     
                 <div class="caixaConta">
                     <div class="perfilFundo">
                         <div class="perfil">
-                            <img src="../img/Kayque.jpg" alt=""></img>
+                            <img src="../img/user.png" alt=""></img>
                         </div>
                     </div>
                     <div class="botaoMudar">
@@ -180,7 +180,11 @@
 
             </div>
             <div class="quadTermosUso" id="termos">    
-                
+                    <div class="cabecalhoFaleConosco">
+                        Termos de Uso
+                    </div>
+                   
+                   
             </div>
         </div>
     </div>

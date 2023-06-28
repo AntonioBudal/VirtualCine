@@ -584,7 +584,7 @@ h2{
 .carrinho .carrinho-item .preco {
     color: var(--cor-secundaria);
     font: 700 1.125rem 'Poppins';
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 .carrinho .carrinho-item .contador {
@@ -619,7 +619,7 @@ h2{
     font: 500 1rem 'Poppins';
     cursor: pointer;
     width: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 15px 0;
     color: #fff;
     background: var(--cor-primaria);

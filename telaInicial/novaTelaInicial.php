@@ -28,7 +28,7 @@
 
     <div class="cabecalho" id="cabe">
         
-        <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
+        <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.php');">
             <img src="../img/Logo.png"  height="50%">
         </div>
         
@@ -92,7 +92,7 @@
     <div class="contentSlides">
         <h1>ASSISTA EM CASA</h1>
         <p>OS MELHORES FILMES EM 3D</p>
-        <div class="botaoAssinar">Assine</div>
+      
     </div>
     <div class="content">
         
@@ -349,9 +349,7 @@
     
     
 </body>
-    <?php
-        $display = $loggedIn ? 'flex' : 'none';
-    ?>
+  
     
     
     <script src="../jquery-3.6.4.min.js"></script>

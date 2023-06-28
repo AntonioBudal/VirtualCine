@@ -2,11 +2,11 @@
 session_start();
 include("../cadastro/conecta.php");
 
-if (isset($_POST["entrar"])) {
+if (isset($_POST["entrarR"])) {
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    $comando = "SELECT * FROM usuario WHERE email = :email AND senha = :senha";
+    $comando = "SELECT * FROM entregador WHERE email = :email AND senha = :senha";
     $resultado = $pdo->prepare($comando);
 
     $resultado->bindParam(':email', $email);

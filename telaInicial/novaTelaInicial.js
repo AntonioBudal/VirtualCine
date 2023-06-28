@@ -238,3 +238,20 @@ function Familia(){
     
  
 }
+
+function sair() {
+    // Send an AJAX request to the PHP logout script
+    $('#menuPerfil').animate({"z-index": "-2"},10);
+    $('#menuPerfil').animate({"display": "none"},200);
+    $('#menuPerfil').animate({"height": "0%"},200);
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "logout.php", true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        // Redirect to the login page or any other desired page
+        window.location.href = "../telaInicial/novaTelaInicial.php";
+      }
+    };
+    xhr.send();
+  };

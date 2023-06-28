@@ -215,7 +215,7 @@ a{
 
 .cabecalhoPerfil{
     cursor: pointer;
-    display: none;
+    display: flex;
     align-items: center;
     background-color: transparent;
     
@@ -511,7 +511,9 @@ h2{
     font-family: "Cairo", sans-serif; 
 }
 
-
+.escondido{
+    display: none;
+}
 
 h1{
     font-size: 60px;

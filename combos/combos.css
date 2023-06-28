@@ -5,7 +5,7 @@
 
 @keyframes rodapeImagemAnim {
     0%{height: 0%;}
-    100%{height: 100px;}
+    100%{height: 20%;}
 }
 
 @keyframes zoom {
@@ -157,7 +157,7 @@ body{
     background-color: #A4161A;
     
     width: 100%;
-    height: 750px;
+    height: 300px;
     background-image: linear-gradient(to bottom,#E5383B , #A4161A,#660708);
     display: flex;
     justify-content: center;
@@ -166,7 +166,7 @@ body{
 .metadeGradiente{
     color:white;
     width: 55%;
-    font-size: 70px;
+    font-size: 40px;
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: row;
@@ -182,16 +182,15 @@ body{
    
     padding: 1%;
     margin-bottom: 1%;
-    height: 15%;
+    height: 5%;
     
     position: absolute;
     display: flex;
     align-self: flex-end;
     flex-direction: column;
     justify-content: space-around;
-   
-    background-color: white;
-    border-bottom: 10px solid #E5383B;
+    background-image: linear-gradient(to bottom, #0B090A,#161A1D);
+    color: white;
     
 }
 .metadeGradienteRodapeTexto,.metadeGradienteRodapeTexto2{
@@ -202,15 +201,15 @@ body{
     flex-direction: row;
     align-items: center;
     
-    color: black;
+    color: white;
  
     margin-left: 5%;
-    font-size: 80px;
+    font-size: 20px;
     
 }
 .metadeGradienteRodapeTexto2{
     
-    font-size: 20PX;
+    font-size: 10PX;
 }
 
 .metadeGradienteMetade{
@@ -229,7 +228,7 @@ body{
     text-transform: 5px;
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.7), transparent);
     backdrop-filter: blur(4px);
-    font-size: 120px;
+    font-size: 60px;
     height: 20%;
     width: inherit;
 
@@ -239,7 +238,7 @@ body{
     display: flex;
     position: absolute;
     top: 40%;
-    font-size: 30px;
+    font-size: 20px;
     border-bottom: 2px solid white;
 }
 .metadeGradiente2{
@@ -254,33 +253,42 @@ body{
     justify-content: center;
     align-items: center;
     color:whitesmoke;
-    font-size: 100px;
+    font-size: 40px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.divCarrinho{
-    width: 70%;
-    position: relative;
-    height: 90%;
-    background-color: whitesmoke;
-    z-index: 2;
-}
-
-.divCarrinhoBotao{
-    width: 100%;
-    height: 20%;
-    background-color: black;
-    border-bottom: 5px solid #A4161A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.carrinhoContent{
+    display : flex;
+   
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
 }
 
 .carrinho{
-    width: 12.5%;
-    height: 65%;
-    background-color: white;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--cor-fundo);
+   
 }
+
+.carrinhobtn{
+    width: 5%;
+    position: absolute;
+    height: 100%;
+    background-color: #E5383B;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+
+
 
 
 .rodape {
@@ -308,6 +316,7 @@ body{
 
 .containerImagens{
     width: 100%;
+    transform: scale(.85);
     height: 50%;
     opacity: 0%;
     display: flex;
@@ -327,7 +336,7 @@ body{
 .cabecalhoImagens{
     width: 100%;
     height: 20%;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,14 +403,14 @@ h{
 }
 h2{
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 20px;
     
 }
 
 .rodapeImage{
     width: 100%;
     height: 15%;
-    background-color: #660708 ;
+    background-image: linear-gradient(to bottom, #A4161A ,#660708);
 
 
     display: flex;
@@ -414,7 +423,7 @@ h2{
 }
 .rodapePreco{
     width: 100%;
-    height: 15%;
+    height: 20%;
     background-color: white ;
  
 
@@ -423,7 +432,7 @@ h2{
     justify-content: center;
     align-items: center;
     color:#660708 ;
-    font-size: 30px;
+    font-size: 20px;
     display: none;
     font-weight: lighter;
     animation-name: rodapeImagemAnim;
@@ -433,5 +442,221 @@ h2{
 }
 .rodapeImage:hover + .rodapePreco{
     display: flex;
+    transition: 2s;
+}
+
+.descontosContent{
+    width: 200%;
+    height: 30%;
+    display: flex;
+    border: 2px solid white;
+    top: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+
+.descontos{
+    width: 20%;
+    height: 50%;
+    background-color: white;
+   
+    overflow:visible ;
     
+}
+.descontosPreco{
+    width: 50%;
+    height: 20%;
+    background-color: #E5383B;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    z-index: -1;
+
+}
+
+.descontoImg{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: #E5383B ;
+}
+
+
+
+.carrinho .carrinho-item .imagem {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+:root {
+    --cor-primaria: #660300;
+    --cor-secundaria: #2a2f43ea;
+    --cor-fundo: #f5f5f5;
+}
+
+
+
+.carrinho .cabecalho-carrinho {
+    display: flex;
+}
+
+.cabecalho-carrinho{
+    
+}
+
+.carrinho .cabecalho-carrinho button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 50%;
+    color: var(--cor-primaria);
+    background-color: #ddddde50;
+    border: 2px solid #ddddde;
+    border-radius: 8px;
+}
+
+.carrinho .cabecalho-carrinho button:hover {
+    color: #fff;
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.carrinho .cabecalho-carrinho h3 {
+    margin: auto;
+    text-align: center;
+    font: 400 1.5rem 'Poppins';
+    color: var(--cor-primaria);
+}
+
+.carrinho .carrinho-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 8ox;
+    box-shadow: 0 4px 18px #2a2f430f;
+}
+
+.carrinho .carrinho-item .imagem {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.carrinho .carrinho-item img {
+    width: 100%;
+}
+
+.carrinho .carrinho-item .info {
+    width: 65%;
+    padding: 14px;
+}
+
+.carrinho .carrinho-item h4{
+    color: var(--cor-primaria);
+    font: 700 1.25rem 'Poppins';
+}
+
+.carrinho .carrinho-item .detalhes{
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho .carrinho-item .detalhes i {
+    color: #2a2f43d2;
+    font-size: 1.0625rem;
+    transform: translate(3px);
+}
+
+.carrinho .carrinho-item .detalhes span {
+    font: 600 0.75rem 'Poppins';
+    color: #2a204399;
+}
+
+.carrinho .carrinho-item .preco {
+    color: var(--cor-secundaria);
+    font: 700 1.125rem 'Poppins';
+    margin-top: 8px;
+}
+
+.carrinho .carrinho-item .contador {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.carrinho .carrinho-item .contador i {
+    cursor: pointer;
+    width: 25px;
+    height: 35px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+    background: var(--cor-primaria);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.carrinho .carrinho-item .contador span {
+    margin: 0 0px;
+    font: 700 1rem 'Poppins';
+    color: var(--cor-secundaria);
+}
+.carrinho{
+    overflow: auto;
+}
+
+.carrinho .pagar {
+    font: 500 1rem 'Poppins';
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0;
+    color: #fff;
+    background: var(--cor-primaria);
+    border-radius: 8px;
+    transition: 1.5s;
+}
+
+.carrinho .pagar:hover {
+    background: rgb(150, 0, 0);
+}
+
+.divTeste{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.cabecalho-carrinho{
+    flex-direction: column;
+}
+
+.imagem{
+    margin-left: 12.5%;
+    overflow: hidden;
+    display: flex;
+}
+.metadeImagem{
+    width: 50%;
+    height: 60%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.seila{
+    display: flex;
+    flex-direction: column;
 }

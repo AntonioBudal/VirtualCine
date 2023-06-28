@@ -8,17 +8,56 @@
     <link rel="stylesheet" href="configuracoes.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
+
+<?php
+    session_start();
+    include("../cadastro/conecta.php");
+    $email = $_SESSION['email'];
+    $password = $_SESSION['senha'];
+
+    // Prepare and execute the query
+    $comando = "SELECT idUsuario, nome, sobrenome FROM usuario WHERE email = :email AND senha = :senha";
+    $resultado = $pdo->prepare($comando);
+    $resultado->bindParam(':email', $email);
+    $resultado->bindParam(':senha', $password);
+    $resultado->execute();
+
+    if ($resultado->rowCount() > 0) {
+    
+    while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
+       
+       
+        $nome = $row['nome'];
+        $sobrenome = $row['sobrenome'];
+
+        
+        
+        $htmlContent = "$nome  $sobrenome";
+       
+
+      
+    }
+    } else {
+   
+    echo "No rows found.";
+    }   
+
+?>
+
 <body>  
+
+
+
     <div class="principal">
         <div class="cabecalho">
-            <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
+            <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.php');">
                <img src="../img/Logo.png"  height="60%">
             </div>
         </div>
         <div class="menu">
             <div class="botoes" onclick="mudarConfiguracao('planos')">Planos</div>
             <div class="botoes" onclick="mudarConfiguracao('conta')">Conta</div>
-            <div class="botoes" onclick="mudarConfiguracao('fale')">Fale conosoco</div>
+            <div class="botoes" onclick="mudarConfiguracao('fale')">Feedback</div>
             <div class="botoes" onclick="mudarConfiguracao('seguranca')">Segurança</div>
             <div class="botoes" onclick="mudarConfiguracao('termos')">Termos de uso</div>
         </div>
@@ -29,9 +68,9 @@
                     <div class="planoImg">
                         <img src="../img/TOP.jpg" alt="" width="110%">
                         <div class="textoPlano">
-                            PLANO FAMÍLIA
+                           
                         </div>
-                       
+
                     </div>
                     <div class="boxTempo">
                             <div class="tempoRestante">
@@ -61,7 +100,7 @@
                         <h1>Nome</h1>
                     </div>
                     <div class="caixaNome">
-                        <h1>Kayque Marcelo Bernado Moreira</h1>
+                        <h1><?php echo "$htmlContent"; ?></h1>
                     </div>
                 </div>        
                 <div class="caixaConta2">
@@ -132,17 +171,9 @@
             <div class="quadFaleConosco" id="fale">      
                 <div class="caixaFaleConosco">
                     <div class="cabecalhoFaleConosco">
-                        Fale conosoco
+                        Feedback
                     </div>
-                    <div class="nBox">
-                        nome
-                    </div>
-                    <div class="mBox">
-
-                    </div>
-                    <div class="nBox">
-
-                    </div>
+                    
                 </div> 
             </div>
             <div class="quadSeguranca" id="seguranca"> 

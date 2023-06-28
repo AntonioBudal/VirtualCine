@@ -32,3 +32,4 @@ function mudarA(){
 function fechar(id){
     $('#'+id).css("display", "none");
 }
+

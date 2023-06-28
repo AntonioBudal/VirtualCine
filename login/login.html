@@ -17,7 +17,7 @@
     <div class="caixa-principal">
       <div class="cabecalho-caixa"></div> 
         <div id="login">
-            <form class="card">
+            <form class="card" id="c" action="login.php" method="post">
                 <div class="card-header">
                     <h2>ENTRE</h2>
                 </div>
@@ -30,14 +30,67 @@
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha" autocomplete="off">
                     </div>
+                  
+                     
                 </div>
                 <div class="card-footer">
                     <a href="../recuperacao/recuperação.html" class="recuperar_senha">Esqueceu a senha?</a>
-                    <input type="submit" value="entrar" name="entrar" class="submit" onclick="Login()">
+                    <input type="submit" value="entrar" name="entrar" class="submit">
                     <br>
                     <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
                 </div>
+
             </form>
+
+            <form class="card rt" id="b" action="loginR.php" method="post">
+              <div class="card-header">
+                  <h2>ENTRE R</h2>
+              </div>
+              <div class="card-content">
+                  <div class="card-content-area">
+                      <label for="usuario">CNPJ</label>
+                      <input type="text" id="email"  name="cnpj" autocomplete="off">
+                  </div>
+                  <div class="card-content-area">
+                      <label for="senha">Senha</label>
+                      <input type="password" id="senha" name="senha" autocomplete="off">
+                  </div>
+                
+                   
+              </div>
+              <div class="card-footer">
+                  <a href="../recuperacao/recuperação.html" class="recuperar_senha">Esqueceu a senha?</a>
+                  <input type="submit" value="entrar" name="entrarR" class="submit">
+                  <br>
+                  <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
+              </div>
+
+          </form>
+
+          <form class="card pd" id="a" action="loginP.php" method="post">
+            <div class="card-header">
+                <h2>ENTRE P</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="propietario">Propietario</label>
+                    <input type="text" id="email"  name="propietario" autocomplete="off">
+                </div>
+                <div class="card-content-area">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" autocomplete="off">
+                </div>
+              
+                 
+            </div>
+            <div class="card-footer">
+                <a href="../recuperacao/recuperação.html" class="recuperar_senha">Esqueceu a senha?</a>
+                <input type="submit" value="entrar" name="entrarP" class="submit">
+                <br>
+                <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
+            </div>
+
+        </form>
         </div>
     </form>
     <!-- Container, dos login pelas redes socias.-->
@@ -65,9 +118,17 @@
       <br>
       <a href="../cadastro/novocadastro.html">Cadastrar-se</a>
     </div>
-   
+    <p>Entre Como</p>
+   <div class="containerTroca">
+     
+      <div class="trocaBotoes" id="d" onclick="trocaLoginA()">Usuário</div>
+      <div class="trocaBotoes" id="e" onclick="trocaLoginB()">Restaurante</div>
+      <div class="trocaBotoes" id="f" onclick ="trocaLoginC()">Produtora</div>
+   </div>
 </body>
 
+
+<script src="../jquery-3.6.4.min.js"></script>
       
 </script>
 </html>

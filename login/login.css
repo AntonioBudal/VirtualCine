@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
   color: #d3d3d3;
-  
+  transition: .2s;
   border: none;
   
 }
@@ -43,6 +43,7 @@ a:hover {
   
 }
 
+
 .cabecalho-caixa{
   width: 100%;
   height: 20%;
@@ -79,6 +80,12 @@ input {  /*linha do email e da senha */
   padding: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
+  display: block;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  background-color: #161A1D;
 }
 
 input:focus { /* hover da linha do email e da senha*/
@@ -152,7 +159,42 @@ input:focus { /* hover da linha do email e da senha*/
   justify-content: right;
 }
 
+.containerTroca{
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #161A1D;
+  background-image : linear-gradient(to bottom, #161A1D, #0B090A);
+}
 
+.trocaBotoes{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 5%;
+  height: 100%;
+  background-color: #0B090A;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.trocaBotoes:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+p{
+  margin-top: 5%;
+}
+
+.rt,.pd{
+  display: none;
+}
 
 
 

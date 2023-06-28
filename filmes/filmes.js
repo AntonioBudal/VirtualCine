@@ -13,7 +13,7 @@ function retornarFuncao(i) {
      }
 
 function voltar(){
-     window.location.href=("../telaInicial/novaTelaInicial.html");
+     window.location.href=("../telaInicial/novaTelaInicial.php");
 }
 
 function telafilme(i){

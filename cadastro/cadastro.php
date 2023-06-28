@@ -1,4 +1,6 @@
 <?php 
+       
+
         include("conecta.php");
         $nome = $_POST["nome"];
         $sobrenome = $_POST["sobrenome"];
@@ -11,7 +13,7 @@
 
         $resultado = $comando->execute();
         
-        header("location: novocadastro.html");
+        header("location: ../telaInicial/novaTelaInicial.php");
         
     ?>
  

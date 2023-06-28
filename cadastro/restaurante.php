@@ -12,7 +12,7 @@
 
         $resultado = $comando2->execute();
         
-        header("location: novocadastro.html");
+        header("location: ../telaInicial/novaTelaInicial.php");
         
 ?>
  

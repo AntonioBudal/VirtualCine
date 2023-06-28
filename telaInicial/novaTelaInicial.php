@@ -9,17 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Virtual Cine</title>
 </head>
+
+<?php
+    session_start();
+    $logado = false;
+    $logado = $_SESSION['logado'];
+?>
+
 <body onload="VerificaBotoes()">
     
-    <div class="menuPerfil" id="menuPerfil" >
-       
-        <div class="perfilSel" onclick="window.location='../configuracoes/configuracoes.html';">Configurações</div>
-        <div class="perfilSel">Planos</div>
-        <div class="perfilSel">Conta</div>
-        <div class="perfilSel">Fale Conosco</div>
-        <div class="perfilSel" onclick="FecharPerfil()">Sair</div>
-    </div>
-    
+       <div class="menuPerfil" id="menuPerfil" >
+            <div class="perfilSel" onclick="window.location='../configuracoes/configuracoes.php';">Configurações</div>
+            <div class="perfilSel">Planos</div>
+            <div class="perfilSel">Conta</div>
+            <div class="perfilSel">Fale Conosco</div>
+            <div class="perfilSel" id = "sair" onclick="sair()">Sair</div>
+       </div>
 
     <div class="cabecalho" id="cabe">
         
@@ -45,9 +50,17 @@
             <!-- <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
             </div> -->
-            <div class="botaoCadastro" onclick ="abrirTela('login','login.html');" id="entrar">ENTRE</div>
-
-            <a href="#"  onclick="MostrarPerfil();"><img src="../img/Perfil.png" id="perfil" width=45px class="cabecalhoPerfil"></a>
+            
+            
+            <?php if ($logado): ?>
+                <a href="#"  onclick="MostrarPerfil();">
+                <img src="../img/Perfil.png" id="perfil" width=45px class="cabecalhoPerfil">
+                </a>
+            <?php else: ?>
+                <div class="botaoCadastro" onclick ="abrirTela('login','login.html');" id="entrar">ENTRE</div>
+            <?php endif; ?>
+            
+           
         </div>
         <div class="containerAbaPrincipal">
             <div class="containerAba">
@@ -336,6 +349,11 @@
     
     
 </body>
+    <?php
+        $display = $loggedIn ? 'flex' : 'none';
+    ?>
+    
+    
     <script src="../jquery-3.6.4.min.js"></script>
     <script src="novaTelaInicial.js"> </script>
 </html>

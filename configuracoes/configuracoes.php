@@ -21,7 +21,14 @@
     $resultado->bindParam(':email', $email);
     $resultado->bindParam(':senha', $password);
     $resultado->execute();
-
+    $htmlContent2 =  $_SESSION["email"];
+    $htmlContent3 =  $_SESSION["telefone"];
+    $htmlContent4 = "";
+    if (isset($_SESSION["endereco"])) {
+        $htmlContent4 =  $_SESSION["endereco"];
+    }
+    
+  
     if ($resultado->rowCount() > 0) {
     
     while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
@@ -33,6 +40,7 @@
         
         
         $htmlContent = "$nome  $sobrenome";
+       
        
 
       
@@ -112,7 +120,7 @@
                             E-mail
                         </div>
                         <div class="emails">
-                            kayque_moreira@estudante.sesisenai.org.br
+                        <h1><?php echo "$htmlContent2"; ?></h1>
                             <img src="../img/Pencil.png" alt="" width="7.5%" onclick="mudarE()"></img>
                         </div>
                     </div>
@@ -121,7 +129,7 @@
                             Telefone
                         </div>
                         <div class="emails">
-                            (47) 9921-4710
+                            <h1><?php echo "$htmlContent3"; ?></h1>
                             <img src="../img/Pencil.png" alt="" width="7.5%" onclick="mudarT()" ></img>
                         </div>
                     </div>
@@ -130,43 +138,50 @@
                             Endereço
                         </div>
                         <div class="emails">
-                            Rua Rudolpho Speckhahn
+                        <h1><?php echo "$htmlContent4"; ?></h1>
                             <img src="../img/Pencil.png" alt="" width="7.5%" onclick="mudarA()" ></img>
                         </div>
                     </div>
                 </div>
-                <div class="caixaMudar" id="e">
-                    <div class="cabecalhoMudar">
-                        Email
-                        <div class="x" onclick="fechar('e')">
-                            X
-                        </div>
+                <div class="centro">
+                    <form action="update.php" class="caixaMudar" id="e" method="post">
+                        <div class="cabecalhoMudar">
+                            Email
+                            <div class="x" onclick="fechar('e')">
+                                X
+                            </div>
 
-                    </div>
-                    <input type="text">
-                    <div class="botao">Mudar</div>
-                </div>
-                <div class="caixaMudar" id="t">
-                    <div class= "cabecalhoMudar">
-                        Telefone
-                        <div class="x" onclick="fechar('t')">
-                            X
                         </div>
-                        
-                    </div>
-                    <input type="text">
-                    <div class="botao">Mudar</div>
-                </div>
-                <div class="caixaMudar" id="a">
-                    <div class="cabecalhoMudar">
-                        Endereço
-                        <div class="x" onclick="fechar('a')">
-                            X
+                        <input type="text" name="email">
+                        <input class="botao" type="submit">Mudar</div>
+
+                    </form>
+
+
+
+                    <form action="updateT.php" class="caixaMudar " id="t" method="post">
+                        <div class= "cabecalhoMudar">
+                            Telefone
+                            <div class="x" onclick="fechar('t')">
+                                X
+                            </div>
+
                         </div>
-                    </div>
-                    <input type="text">
-                    <div class="botao">Mudar</div>
-                </div>
+                        <input type="text" name="telefone">
+                        <input class="botao" type="submit">Mudar</div>
+                    </form>
+
+
+                    <form action="updateE.php" class="caixaMudar " id="a" method="post">
+                        <div class="cabecalhoMudar">
+                            Endereço
+                            <div class="x" onclick="fechar('a')">
+                                X
+                            </div>
+                        </div>
+                        <input type="text">
+                        <input class="botao" type="submit">Mudar</div>
+                    </form>
             </div>
             <div class="quadFaleConosco" id="fale">      
                 <div class="caixaFaleConosco">

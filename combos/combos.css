@@ -17,13 +17,15 @@ body{
     padding : 0;
     margin : 0;
     background-color: #161A1D;
+    overflow-x: hidden;
 }
+
 
 .principal{
     background-color: #161A1D;
     width: 100%;
     height: 200vh;
-    
+    overflow-x: hidden;
 }
 .cabecalho {
     width: 100%;
@@ -272,6 +274,7 @@ body{
     display: flex;
     flex-direction: column;
     background: var(--cor-fundo);
+
    
 }
 
@@ -281,6 +284,7 @@ body{
     height: 100%;
     background-color: #E5383B;
     z-index: 5;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,6 +364,19 @@ body{
     
 }
 
+.carrinhoTitulo{
+    width: 100%;
+    height: 100px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #A4161A;
+    display: flex;
+}
+
 .divDiagonal{
     width: 20%;
     height: 75%;
@@ -412,14 +429,22 @@ h2{
     height: 15%;
     background-image: linear-gradient(to bottom, #A4161A ,#660708);
 
-
+    cursor: pointer;
     display: flex;
     align-items: end;
     justify-content: center;
     align-items: center;
     color: white;
+    transition: 1s;
    
 
+}
+
+.rodapeImage:hover{
+    background-image: none;
+   
+    background-color: #660708;
+    transition: 1s;
 }
 .rodapePreco{
     width: 100%;
@@ -558,6 +583,12 @@ h2{
 .carrinho .carrinho-item .info {
     width: 65%;
     padding: 14px;
+}
+
+.carrinho-item:hover{
+    transition: .5s;
+    background-color: #d3d3d3;
+    cursor: pointer;
 }
 
 .carrinho .carrinho-item h4{

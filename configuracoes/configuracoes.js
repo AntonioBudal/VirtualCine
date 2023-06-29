@@ -20,6 +20,7 @@ function mudarT(){
     $('#t').css("display", "flex");
     $('#a').css("display", "none");
     $('#e').css("display", "none");
+
 }
 
 
@@ -27,6 +28,7 @@ function mudarA(){
     $('#a').css("display", "flex");
     $('#e').css("display", "none");
     $('#t').css("display", "none");
+   
 }
 
 function fechar(id){

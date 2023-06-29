@@ -51,16 +51,16 @@ function addCarrinho(nomecombo,imagem1,imagem2,preco){
       src: imagem1,
       height: "100%",
       width: "150%",
-      overflow: "hidden",
-      alt: "..."
+      overflow: "hidden"
     });
     var img2 = $("<img>", {
       src: imagem2,
       height: "100%",
       width: "150%",
-      overflow: "hidden",
-      alt: "..."
+      overflow: "hidden"
     });
+
+    console.log(typeof img2);
     
     metadeImagem1.append(img1);
     metadeImagem2.append(img2);
@@ -84,7 +84,7 @@ function addCarrinho(nomecombo,imagem1,imagem2,preco){
     detalhesDiv.append(tempoDiv, statusDiv);
     
     var precoDiv = $("<div>", { class: "preco" });
-    var precoP = $("<p>").text(preco);
+    var precoP = $("<p>").text('R$'+preco );
     var contadorDiv = $("<div>", { class: "contador" });
     var minusIcon = $("<i>", { class: "bx bx-minus" });
     var span = $("<span>").text("1");

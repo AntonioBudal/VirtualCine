@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
-  color: #323232;
+  color: white;
   border: none;
 }
 
@@ -26,6 +26,7 @@ a:hover {
 
 .caixa-principal {
   background-color: #FFF;
+  background-image : linear-gradient(to bottom, #0B090A,#161A1D);
   margin-left: auto;
   margin-right: auto;
   width: 400px;
@@ -46,7 +47,7 @@ input {
   display: block;
   width: 100%;
   text-align: left;
-  color: black;
+  color: white;
 }
 
 label {  
@@ -55,7 +56,7 @@ label {
 }
 
 input {  
-  border: 2px solid #323232;
+  border: 2px solid white;
   padding: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
@@ -108,7 +109,7 @@ input:focus {
   background-color: #000000;
 }
 .card-content label { /* texto 3 */
-  color: black;
+  color: white;
   font-size: 15px;
   opacity: 0.8;
   display: flex;
@@ -135,7 +136,7 @@ input[type="radio"] {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid white;
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
@@ -159,12 +160,12 @@ input[type="radio"] {
   
   input[type="radio"]:checked + label {
     /* Estilo da bolinha quando selecionada */
-    background-color:  rgb(186, 0 , 1);;
+    background-color:  white;
   }
 
   input[type="radio"]:checked + label {
     /* Estilo da bolinha quando selecionada */
-    background-color:  rgb(186, 0 , 1);;
+    background-color:  white;
 
   }
 
@@ -180,6 +181,7 @@ input[type="radio"] {
   }
   .Emailcaixa{
     display: none;
+    background-color: #323232;
   }
   
     .container{
@@ -190,6 +192,7 @@ input[type="radio"] {
     }
     .caixa_telefone{
       margin-left: 30%;
+      background-color: #323232;
     }
     .bandeiraemenor
     {
@@ -219,7 +222,7 @@ input[type="radio"] {
       justify-items: center;
     }
     .bandeiraemenor:hover{
-      border: solid 2px  #323232;
+      border: solid 2px  white;
     }
     .img_sinalmenor{
       width: 30px;
@@ -244,7 +247,7 @@ input[type="radio"] {
       height: 39px;
       display: flex;
       padding: 5px;
-      color: rgb(56, 50, 50);
+      color: white;
       font-family: 'Quicksand', sans-serif;
       cursor: pointer;
       border: solid 2px  #ffffff;

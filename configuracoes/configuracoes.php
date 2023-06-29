@@ -21,8 +21,12 @@
     $resultado->bindParam(':email', $email);
     $resultado->bindParam(':senha', $password);
     $resultado->execute();
+
+    $htmlContent3 = "";
     $htmlContent2 =  $_SESSION["email"];
+    if (isset($_SESSION["telefone"])) {
     $htmlContent3 =  $_SESSION["telefone"];
+    }
     $htmlContent4 = "";
     if (isset($_SESSION["endereco"])) {
         $htmlContent4 =  $_SESSION["endereco"];
@@ -65,9 +69,9 @@
         <div class="menu">
             <div class="botoes" onclick="mudarConfiguracao('planos')">Planos</div>
             <div class="botoes" onclick="mudarConfiguracao('conta')">Conta</div>
-            <div class="botoes" onclick="mudarConfiguracao('fale')">Feedback</div>
-            <div class="botoes" onclick="mudarConfiguracao('seguranca')">Segurança</div>
-            <div class="botoes" onclick="mudarConfiguracao('termos')">Termos de uso</div>
+         
+            <!-- <div class="botoes" onclick="mudarConfiguracao('seguranca')">Segurança</div>
+            <div class="botoes" onclick="mudarConfiguracao('termos')">Termos de uso</div> -->
         </div>
         <div class="content">
             <div class="quadPlanos" id="planos">    
@@ -157,7 +161,17 @@
 
                     </form>
 
-
+                    
+                    <form action="updateE.php" class="caixaMudar " id="a" method="post">
+                        <div class="cabecalhoMudar">
+                            Endereço
+                            <div class="x" onclick="fechar('a')">
+                                X
+                            </div>
+                        </div>
+                        <input type="text">
+                        <input class="botao" type="submit"></div>
+                    </form> 
 
                     <form action="updateT.php" class="caixaMudar " id="t" method="post">
                         <div class= "cabecalhoMudar">
@@ -168,28 +182,13 @@
 
                         </div>
                         <input type="text" name="telefone">
-                        <input class="botao" type="submit">Mudar</div>
+                        <input class="botao" type="submit"></div>
                     </form>
 
-
-                    <form action="updateE.php" class="caixaMudar " id="a" method="post">
-                        <div class="cabecalhoMudar">
-                            Endereço
-                            <div class="x" onclick="fechar('a')">
-                                X
-                            </div>
-                        </div>
-                        <input type="text">
-                        <input class="botao" type="submit">Mudar</div>
-                    </form>
+                    </div>
             </div>
             <div class="quadFaleConosco" id="fale">      
-                <div class="caixaFaleConosco">
-                    <div class="cabecalhoFaleConosco">
-                        Feedback
-                    </div>
-                    
-                </div> 
+              
             </div>
             <div class="quadSeguranca" id="seguranca"> 
 
